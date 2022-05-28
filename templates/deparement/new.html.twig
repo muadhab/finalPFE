@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Deparement{% endblock %}
+
+{% block body %}
+    <h1>Create new Deparement</h1>
+
+    {{ include('deparement/_form.html.twig') }}
+
+    <a href="{{ path('app_deparement_index') }}">back to list</a>
+{% endblock %}

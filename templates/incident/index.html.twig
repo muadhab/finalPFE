@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Incident index{% endblock %}
+
+{% block body %}
+    <h1>Incident index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom_incident</th>
+                <th>Desc_incident</th>
+                <th>Urgence_incident</th>
+                <th>Status_incident</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for incident in incidents %}
+            <tr>
+                <td>{{ incident.id }}</td>
+                <td>{{ incident.nomIncident }}</td>
+                <td>{{ incident.descIncident }}</td>
+                <td>{{ incident.urgenceIncident }}</td>
+                <td>{{ incident.statusIncident }}</td>
+                <td>
+                    <a href="{{ path('app_incident_show', {'id': incident.id}) }}">show</a>
+                    <a href="{{ path('app_incident_edit', {'id': incident.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_incident_new') }}">Create new</a>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit AttachedFile{% endblock %}
+
+{% block body %}
+    <h1>Edit AttachedFile</h1>
+
+    {{ include('attached_file/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_attached_file_index') }}">back to list</a>
+
+    {{ include('attached_file/_delete_form.html.twig') }}
+{% endblock %}

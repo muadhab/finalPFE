@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New AttachedFile{% endblock %}
+
+{% block body %}
+    <h1>Create new AttachedFile</h1>
+
+    {{ include('attached_file/_form.html.twig') }}
+
+    <a href="{{ path('app_attached_file_index') }}">back to list</a>
+{% endblock %}

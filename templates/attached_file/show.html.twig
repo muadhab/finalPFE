@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}AttachedFile{% endblock %}
+
+{% block body %}
+    <h1>AttachedFile</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ attached_file.id }}</td>
+            </tr>
+            <tr>
+                <th>Oraversion</th>
+                <td>{{ attached_file.oraversion }}</td>
+            </tr>
+            <tr>
+                <th>Orahome</th>
+                <td>{{ attached_file.orahome }}</td>
+            </tr>
+            <tr>
+                <th>Orabase</th>
+                <td>{{ attached_file.orabase }}</td>
+            </tr>
+            <tr>
+                <th>Orasid</th>
+                <td>{{ attached_file.orasid }}</td>
+            </tr>
+            <tr>
+                <th>Ora_score</th>
+                <td>{{ attached_file.oraScore }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_attached_file_index') }}">back to list</a>
+
+    <a href="{{ path('app_attached_file_edit', {'id': attached_file.id}) }}">edit</a>
+
+    {{ include('attached_file/_delete_form.html.twig') }}
+{% endblock %}

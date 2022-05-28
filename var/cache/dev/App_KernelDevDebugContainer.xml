@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services https://symfony.com/schema/dic/services/services-1.0.xsd">
   <parameters>
-    <parameter key="kernel.project_dir">C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE</parameter>
+    <parameter key="kernel.project_dir">C:\Users\Mouadh\Documents\GitHub\finalPFE</parameter>
     <parameter key="kernel.environment">dev</parameter>
     <parameter key="kernel.runtime_environment">%env(default:kernel.environment:APP_RUNTIME_ENV)%</parameter>
     <parameter key="kernel.debug">true</parameter>
-    <parameter key="kernel.build_dir">C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev</parameter>
-    <parameter key="kernel.cache_dir">C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev</parameter>
-    <parameter key="kernel.logs_dir">C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\log</parameter>
+    <parameter key="kernel.build_dir">C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev</parameter>
+    <parameter key="kernel.cache_dir">C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev</parameter>
+    <parameter key="kernel.logs_dir">C:\Users\Mouadh\Documents\GitHub\finalPFE\var\log</parameter>
     <parameter key="kernel.bundles" type="collection">
       <parameter key="FrameworkBundle">Symfony\Bundle\FrameworkBundle\FrameworkBundle</parameter>
       <parameter key="SensioFrameworkExtraBundle">Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle</parameter>
@@ -24,51 +24,51 @@
     </parameter>
     <parameter key="kernel.bundles_metadata" type="collection">
       <parameter key="FrameworkBundle" type="collection">
-        <parameter key="path">C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\framework-bundle</parameter>
+        <parameter key="path">C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\framework-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\FrameworkBundle</parameter>
       </parameter>
       <parameter key="SensioFrameworkExtraBundle" type="collection">
-        <parameter key="path">C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\sensio\framework-extra-bundle\src</parameter>
+        <parameter key="path">C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\sensio\framework-extra-bundle\src</parameter>
         <parameter key="namespace">Sensio\Bundle\FrameworkExtraBundle</parameter>
       </parameter>
       <parameter key="TwigBundle" type="collection">
-        <parameter key="path">C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\twig-bundle</parameter>
+        <parameter key="path">C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\twig-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\TwigBundle</parameter>
       </parameter>
       <parameter key="WebProfilerBundle" type="collection">
-        <parameter key="path">C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\web-profiler-bundle</parameter>
+        <parameter key="path">C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\web-profiler-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\WebProfilerBundle</parameter>
       </parameter>
       <parameter key="MonologBundle" type="collection">
-        <parameter key="path">C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\monolog-bundle</parameter>
+        <parameter key="path">C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\monolog-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\MonologBundle</parameter>
       </parameter>
       <parameter key="DebugBundle" type="collection">
-        <parameter key="path">C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\debug-bundle</parameter>
+        <parameter key="path">C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\debug-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\DebugBundle</parameter>
       </parameter>
       <parameter key="MakerBundle" type="collection">
-        <parameter key="path">C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\maker-bundle\src</parameter>
+        <parameter key="path">C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\maker-bundle\src</parameter>
         <parameter key="namespace">Symfony\Bundle\MakerBundle</parameter>
       </parameter>
       <parameter key="DoctrineBundle" type="collection">
-        <parameter key="path">C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\doctrine\doctrine-bundle</parameter>
+        <parameter key="path">C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\doctrine\doctrine-bundle</parameter>
         <parameter key="namespace">Doctrine\Bundle\DoctrineBundle</parameter>
       </parameter>
       <parameter key="DoctrineMigrationsBundle" type="collection">
-        <parameter key="path">C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\doctrine\doctrine-migrations-bundle</parameter>
+        <parameter key="path">C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\doctrine\doctrine-migrations-bundle</parameter>
         <parameter key="namespace">Doctrine\Bundle\MigrationsBundle</parameter>
       </parameter>
       <parameter key="SecurityBundle" type="collection">
-        <parameter key="path">C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-bundle</parameter>
+        <parameter key="path">C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\SecurityBundle</parameter>
       </parameter>
       <parameter key="TwigExtraBundle" type="collection">
-        <parameter key="path">C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\twig\extra-bundle</parameter>
+        <parameter key="path">C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\twig\extra-bundle</parameter>
         <parameter key="namespace">Twig\Extra\TwigExtraBundle</parameter>
       </parameter>
       <parameter key="WebpackEncoreBundle" type="collection">
-        <parameter key="path">C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\webpack-encore-bundle\src</parameter>
+        <parameter key="path">C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\webpack-encore-bundle\src</parameter>
         <parameter key="namespace">Symfony\WebpackEncoreBundle</parameter>
       </parameter>
     </parameter>
@@ -109,17 +109,17 @@
     <parameter key="asset.request_context.base_path">null</parameter>
     <parameter key="asset.request_context.secure">null</parameter>
     <parameter key="translator.logging">false</parameter>
-    <parameter key="translator.default_path">C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE/translations</parameter>
+    <parameter key="translator.default_path">C:\Users\Mouadh\Documents\GitHub\finalPFE/translations</parameter>
     <parameter key="debug.error_handler.throw_at">-1</parameter>
-    <parameter key="debug.container.dump">C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev/App_KernelDevDebugContainer.xml</parameter>
+    <parameter key="debug.container.dump">C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev/App_KernelDevDebugContainer.xml</parameter>
     <parameter key="router.request_context.host">localhost</parameter>
     <parameter key="router.request_context.scheme">http</parameter>
     <parameter key="router.request_context.base_url"></parameter>
     <parameter key="router.resource">kernel::loadRoutes</parameter>
     <parameter key="request_listener.http_port">80</parameter>
     <parameter key="request_listener.https_port">443</parameter>
-    <parameter key="serializer.mapping.cache.file">C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev/serialization.php</parameter>
-    <parameter key="cache.prefix.seed">_C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE.App_KernelDevDebugContainer</parameter>
+    <parameter key="serializer.mapping.cache.file">C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev/serialization.php</parameter>
+    <parameter key="cache.prefix.seed">_C:\Users\Mouadh\Documents\GitHub\finalPFE.App_KernelDevDebugContainer</parameter>
     <parameter key="session.metadata.storage_key">_sf2_meta</parameter>
     <parameter key="session.storage.options" type="collection">
       <parameter key="cache_limiter" type="string">0</parameter>
@@ -128,19 +128,19 @@
       <parameter key="cookie_samesite">lax</parameter>
       <parameter key="gc_probability">1</parameter>
     </parameter>
-    <parameter key="session.save_path">C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev/sessions</parameter>
+    <parameter key="session.save_path">C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev/sessions</parameter>
     <parameter key="session.metadata.update_threshold">0</parameter>
     <parameter key="form.type_extension.csrf.enabled">true</parameter>
     <parameter key="form.type_extension.csrf.field_name">_token</parameter>
-    <parameter key="validator.mapping.cache.file">C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev/validation.php</parameter>
+    <parameter key="validator.mapping.cache.file">C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev/validation.php</parameter>
     <parameter key="validator.translation_domain">validators</parameter>
     <parameter key="profiler_listener.only_exceptions">false</parameter>
     <parameter key="profiler_listener.only_main_requests">false</parameter>
-    <parameter key="profiler.storage.dsn">file:C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev/profiler</parameter>
+    <parameter key="profiler.storage.dsn">file:C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev/profiler</parameter>
     <parameter key="twig.form.resources" type="collection">
       <parameter>form_div_layout.html.twig</parameter>
     </parameter>
-    <parameter key="twig.default_path">C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE/templates</parameter>
+    <parameter key="twig.default_path">C:\Users\Mouadh\Documents\GitHub\finalPFE/templates</parameter>
     <parameter key="web_profiler.debug_toolbar.intercept_redirects">false</parameter>
     <parameter key="web_profiler.debug_toolbar.mode">2</parameter>
     <parameter key="monolog.use_microseconds">true</parameter>
@@ -228,7 +228,7 @@
     <parameter key="doctrine.orm.second_level_cache.cache_configuration.class">Doctrine\ORM\Cache\CacheConfiguration</parameter>
     <parameter key="doctrine.orm.second_level_cache.regions_configuration.class">Doctrine\ORM\Cache\RegionsConfiguration</parameter>
     <parameter key="doctrine.orm.auto_generate_proxy_classes">true</parameter>
-    <parameter key="doctrine.orm.proxy_dir">C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev/doctrine/orm/Proxies</parameter>
+    <parameter key="doctrine.orm.proxy_dir">C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev/doctrine/orm/Proxies</parameter>
     <parameter key="doctrine.orm.proxy_namespace">Proxies</parameter>
     <parameter key="doctrine.migrations.preferred_em">null</parameter>
     <parameter key="doctrine.migrations.preferred_connection">null</parameter>
@@ -337,12 +337,79 @@
       <tag name="controller.service_arguments"/>
       <tag name="routing.route_loader"/>
     </service>
+    <service id="App\Controller\AttachedFileController" class="App\Controller\AttachedFileController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.GNc8e5B.App\Controller\AttachedFileController"/>
+      </call>
+    </service>
+    <service id="App\Controller\DeparementController" class="App\Controller\DeparementController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.GNc8e5B.App\Controller\DeparementController"/>
+      </call>
+    </service>
     <service id="App\Controller\HomeController" class="App\Controller\HomeController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
       <tag name="container.service_subscriber"/>
       <call method="setContainer">
         <argument type="service" id=".service_locator.GNc8e5B.App\Controller\HomeController"/>
       </call>
+    </service>
+    <service id="App\Controller\IncidentController" class="App\Controller\IncidentController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.GNc8e5B.App\Controller\IncidentController"/>
+      </call>
+    </service>
+    <service id="App\Controller\RegistrationController" class="App\Controller\RegistrationController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.GNc8e5B.App\Controller\RegistrationController"/>
+      </call>
+    </service>
+    <service id="App\Controller\SecurityController" class="App\Controller\SecurityController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.GNc8e5B.App\Controller\SecurityController"/>
+      </call>
+    </service>
+    <service id="App\Controller\TaskController" class="App\Controller\TaskController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.GNc8e5B.App\Controller\TaskController"/>
+      </call>
+    </service>
+    <service id="App\Controller\UserController" class="App\Controller\UserController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.GNc8e5B.App\Controller\UserController"/>
+      </call>
+    </service>
+    <service id="App\Form\AttachedFileType" class="App\Form\AttachedFileType" autowire="true" autoconfigure="true">
+      <tag name="form.type"/>
+    </service>
+    <service id="App\Form\DeparementType" class="App\Form\DeparementType" autowire="true" autoconfigure="true">
+      <tag name="form.type"/>
+    </service>
+    <service id="App\Form\IncidentType" class="App\Form\IncidentType" autowire="true" autoconfigure="true">
+      <tag name="form.type"/>
+    </service>
+    <service id="App\Form\RegistrationFormType" class="App\Form\RegistrationFormType" autowire="true" autoconfigure="true">
+      <tag name="form.type"/>
+    </service>
+    <service id="App\Form\TaskType" class="App\Form\TaskType" autowire="true" autoconfigure="true">
+      <tag name="form.type"/>
+    </service>
+    <service id="App\Form\UserType" class="App\Form\UserType" autowire="true" autoconfigure="true">
+      <tag name="form.type"/>
     </service>
     <service id="App\Repository\AttachedFileRepository" class="App\Repository\AttachedFileRepository" autowire="true" autoconfigure="true">
       <tag name="doctrine.repository_service"/>
@@ -363,6 +430,9 @@
     <service id="App\Repository\UserRepository" class="App\Repository\UserRepository" autowire="true" autoconfigure="true">
       <tag name="doctrine.repository_service"/>
       <argument type="service" id="doctrine"/>
+    </service>
+    <service id="App\Security\AppCustomAuthenticator" class="App\Security\AppCustomAuthenticator" autowire="true" autoconfigure="true">
+      <argument type="service" id="router.default"/>
     </service>
     <service id="argument_metadata_factory" class="Symfony\Component\HttpKernel\ControllerMetadata\ArgumentMetadataFactory"/>
     <service id="response_listener" class="Symfony\Component\HttpKernel\EventListener\ResponseListener">
@@ -433,7 +503,7 @@
       </argument>
     </service>
     <service id="http_cache.store" class="Symfony\Component\HttpKernel\HttpCache\Store">
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev/http_cache</argument>
+      <argument>C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev/http_cache</argument>
     </service>
     <service id="url_helper" class="Symfony\Component\HttpFoundation\UrlHelper">
       <argument type="service" id="request_stack"/>
@@ -443,7 +513,7 @@
       <tag name="container.no_preload"/>
       <argument type="tagged_iterator" tag="kernel.cache_warmer"/>
       <argument>true</argument>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev/App_KernelDevDebugContainerDeprecations.log</argument>
+      <argument>C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev/App_KernelDevDebugContainerDeprecations.log</argument>
     </service>
     <service id="cache_clearer" class="Symfony\Component\HttpKernel\CacheClearer\ChainCacheClearer" public="true">
       <tag name="container.private" package="symfony/framework-bundle" version="5.2"/>
@@ -647,7 +717,7 @@
       </argument>
       <argument>UTF-8</argument>
       <argument type="service" id="debug.file_link_formatter" on-invalid="null"/>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE</argument>
+      <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE</argument>
       <argument type="service">
         <service>
           <argument type="service" id="request_stack"/>
@@ -680,7 +750,7 @@
       <tag name="console.command"/>
       <tag name="container.no_preload"/>
       <argument type="service" id="filesystem"/>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE</argument>
+      <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE</argument>
       <call method="setName">
         <argument>assets:install</argument>
       </call>
@@ -849,7 +919,7 @@
       <tag name="console.command"/>
       <tag name="container.no_preload"/>
       <argument>dev</argument>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE</argument>
+      <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE</argument>
       <call method="setName">
         <argument>debug:dotenv</argument>
       </call>
@@ -898,16 +968,16 @@
       <argument type="service" id="translator.data_collector"/>
       <argument type="service" id="translation.reader"/>
       <argument type="service" id="translation.extractor"/>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE/translations</argument>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE/templates</argument>
+      <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE/translations</argument>
+      <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE/templates</argument>
       <argument type="collection">
-        <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations</argument>
-        <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations</argument>
-        <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations</argument>
+        <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations</argument>
+        <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations</argument>
+        <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations</argument>
       </argument>
       <argument type="collection">
-        <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\twig-bridge/Resources/views/Email</argument>
-        <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\twig-bridge/Resources/views/Form</argument>
+        <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\twig-bridge/Resources/views/Email</argument>
+        <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\twig-bridge/Resources/views/Form</argument>
       </argument>
       <argument type="collection"/>
       <call method="setName">
@@ -924,16 +994,16 @@
       <argument type="service" id="translation.reader"/>
       <argument type="service" id="translation.extractor"/>
       <argument>en</argument>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE/translations</argument>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE/templates</argument>
+      <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE/translations</argument>
+      <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE/templates</argument>
       <argument type="collection">
-        <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations</argument>
-        <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations</argument>
-        <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations</argument>
+        <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations</argument>
+        <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations</argument>
+        <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations</argument>
       </argument>
       <argument type="collection">
-        <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\twig-bridge/Resources/views/Email</argument>
-        <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\twig-bridge/Resources/views/Form</argument>
+        <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\twig-bridge/Resources/views/Email</argument>
+        <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\twig-bridge/Resources/views/Form</argument>
       </argument>
       <argument type="collection"/>
       <call method="setName">
@@ -1015,9 +1085,16 @@
       <argument type="service" id="form.registry"/>
       <argument type="collection">
         <argument>Symfony\Component\Form\Extension\Core\Type</argument>
+        <argument>App\Form</argument>
         <argument>Symfony\Bridge\Doctrine\Form\Type</argument>
       </argument>
       <argument type="collection">
+        <argument>App\Form\AttachedFileType</argument>
+        <argument>App\Form\DeparementType</argument>
+        <argument>App\Form\IncidentType</argument>
+        <argument>App\Form\RegistrationFormType</argument>
+        <argument>App\Form\TaskType</argument>
+        <argument>App\Form\UserType</argument>
         <argument>Symfony\Component\Form\Extension\Core\Type\FormType</argument>
         <argument>Symfony\Component\Form\Extension\Core\Type\ChoiceType</argument>
         <argument>Symfony\Component\Form\Extension\Core\Type\FileType</argument>
@@ -1157,7 +1234,7 @@
       <argument></argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -1187,7 +1264,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev/pools/app</argument>
+      <argument>C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev/pools/app</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
@@ -1351,7 +1428,7 @@
       <deprecated package="symfony/framework-bundle" version="5.3">The "%service_id%" service is deprecated, use "assets.json_manifest_version_strategy" instead.</deprecated>
     </service>
     <service id="assets._version__default" class="Symfony\Component\Asset\VersionStrategy\JsonManifestVersionStrategy">
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE/public/build/manifest.json</argument>
+      <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE/public/build/manifest.json</argument>
       <argument type="service" id=".debug.http_client" on-invalid="null"/>
       <argument>false</argument>
     </service>
@@ -1471,319 +1548,319 @@
         </argument>
       </argument>
       <argument type="collection">
-        <argument key="cache_dir">C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev/translations</argument>
+        <argument key="cache_dir">C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev/translations</argument>
         <argument key="debug">true</argument>
         <argument key="resource_files" type="collection">
           <argument key="af" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.af.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.af.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.af.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.af.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.af.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.af.xlf</argument>
           </argument>
           <argument key="ar" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.ar.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.ar.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.ar.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.ar.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.ar.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.ar.xlf</argument>
           </argument>
           <argument key="az" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.az.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.az.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.az.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.az.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.az.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.az.xlf</argument>
           </argument>
           <argument key="be" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.be.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.be.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.be.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.be.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.be.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.be.xlf</argument>
           </argument>
           <argument key="bg" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.bg.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.bg.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.bg.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.bg.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.bg.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.bg.xlf</argument>
           </argument>
           <argument key="bs" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.bs.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.bs.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.bs.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.bs.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.bs.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.bs.xlf</argument>
           </argument>
           <argument key="ca" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.ca.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.ca.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.ca.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.ca.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.ca.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.ca.xlf</argument>
           </argument>
           <argument key="cs" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.cs.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.cs.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.cs.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.cs.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.cs.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.cs.xlf</argument>
           </argument>
           <argument key="cy" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.cy.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.cy.xlf</argument>
           </argument>
           <argument key="da" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.da.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.da.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.da.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.da.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.da.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.da.xlf</argument>
           </argument>
           <argument key="de" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.de.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.de.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.de.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.de.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.de.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.de.xlf</argument>
           </argument>
           <argument key="el" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.el.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.el.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.el.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.el.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.el.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.el.xlf</argument>
           </argument>
           <argument key="en" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.en.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.en.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.en.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.en.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.en.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.en.xlf</argument>
           </argument>
           <argument key="es" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.es.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.es.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.es.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.es.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.es.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.es.xlf</argument>
           </argument>
           <argument key="et" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.et.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.et.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.et.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.et.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.et.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.et.xlf</argument>
           </argument>
           <argument key="eu" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.eu.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.eu.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.eu.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.eu.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.eu.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.eu.xlf</argument>
           </argument>
           <argument key="fa" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.fa.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.fa.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.fa.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.fa.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.fa.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.fa.xlf</argument>
           </argument>
           <argument key="fi" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.fi.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.fi.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.fi.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.fi.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.fi.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.fi.xlf</argument>
           </argument>
           <argument key="fr" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.fr.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.fr.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.fr.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.fr.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.fr.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.fr.xlf</argument>
           </argument>
           <argument key="gl" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.gl.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.gl.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.gl.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.gl.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.gl.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.gl.xlf</argument>
           </argument>
           <argument key="he" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.he.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.he.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.he.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.he.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.he.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.he.xlf</argument>
           </argument>
           <argument key="hr" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.hr.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.hr.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.hr.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.hr.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.hr.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.hr.xlf</argument>
           </argument>
           <argument key="hu" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.hu.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.hu.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.hu.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.hu.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.hu.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.hu.xlf</argument>
           </argument>
           <argument key="hy" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.hy.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.hy.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.hy.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.hy.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.hy.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.hy.xlf</argument>
           </argument>
           <argument key="id" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.id.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.id.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.id.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.id.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.id.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.id.xlf</argument>
           </argument>
           <argument key="it" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.it.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.it.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.it.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.it.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.it.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.it.xlf</argument>
           </argument>
           <argument key="ja" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.ja.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.ja.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.ja.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.ja.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.ja.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.ja.xlf</argument>
           </argument>
           <argument key="lb" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.lb.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.lb.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.lb.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.lb.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.lb.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.lb.xlf</argument>
           </argument>
           <argument key="lt" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.lt.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.lt.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.lt.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.lt.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.lt.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.lt.xlf</argument>
           </argument>
           <argument key="lv" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.lv.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.lv.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.lv.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.lv.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.lv.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.lv.xlf</argument>
           </argument>
           <argument key="mn" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.mn.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.mn.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.mn.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.mn.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.mn.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.mn.xlf</argument>
           </argument>
           <argument key="my" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.my.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.my.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.my.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.my.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.my.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.my.xlf</argument>
           </argument>
           <argument key="nb" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.nb.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.nb.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.nb.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.nb.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.nb.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.nb.xlf</argument>
           </argument>
           <argument key="nl" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.nl.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.nl.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.nl.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.nl.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.nl.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.nl.xlf</argument>
           </argument>
           <argument key="nn" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.nn.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.nn.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.nn.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.nn.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.nn.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.nn.xlf</argument>
           </argument>
           <argument key="no" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.no.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.no.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.no.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.no.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.no.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.no.xlf</argument>
           </argument>
           <argument key="pl" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.pl.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.pl.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.pl.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.pl.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.pl.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.pl.xlf</argument>
           </argument>
           <argument key="pt" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.pt.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.pt.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.pt.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.pt.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.pt.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.pt.xlf</argument>
           </argument>
           <argument key="pt_BR" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.pt_BR.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.pt_BR.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.pt_BR.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.pt_BR.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.pt_BR.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.pt_BR.xlf</argument>
           </argument>
           <argument key="ro" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.ro.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.ro.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.ro.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.ro.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.ro.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.ro.xlf</argument>
           </argument>
           <argument key="ru" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.ru.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.ru.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.ru.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.ru.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.ru.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.ru.xlf</argument>
           </argument>
           <argument key="sk" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.sk.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.sk.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.sk.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.sk.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.sk.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.sk.xlf</argument>
           </argument>
           <argument key="sl" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.sl.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.sl.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.sl.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.sl.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.sl.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.sl.xlf</argument>
           </argument>
           <argument key="sq" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.sq.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.sq.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.sq.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.sq.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.sq.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.sq.xlf</argument>
           </argument>
           <argument key="sr_Cyrl" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.sr_Cyrl.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.sr_Cyrl.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.sr_Cyrl.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.sr_Cyrl.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.sr_Cyrl.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.sr_Cyrl.xlf</argument>
           </argument>
           <argument key="sr_Latn" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.sr_Latn.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.sr_Latn.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.sr_Latn.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.sr_Latn.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.sr_Latn.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.sr_Latn.xlf</argument>
           </argument>
           <argument key="sv" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.sv.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.sv.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.sv.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.sv.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.sv.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.sv.xlf</argument>
           </argument>
           <argument key="th" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.th.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.th.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.th.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.th.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.th.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.th.xlf</argument>
           </argument>
           <argument key="tl" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.tl.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.tl.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.tl.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.tl.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.tl.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.tl.xlf</argument>
           </argument>
           <argument key="tr" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.tr.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.tr.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.tr.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.tr.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.tr.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.tr.xlf</argument>
           </argument>
           <argument key="uk" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.uk.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.uk.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.uk.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.uk.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.uk.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.uk.xlf</argument>
           </argument>
           <argument key="uz" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.uz.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.uz.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.uz.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.uz.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.uz.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.uz.xlf</argument>
           </argument>
           <argument key="vi" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.vi.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.vi.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.vi.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.vi.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.vi.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.vi.xlf</argument>
           </argument>
           <argument key="zh_CN" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.zh_CN.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.zh_CN.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.zh_CN.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.zh_CN.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.zh_CN.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.zh_CN.xlf</argument>
           </argument>
           <argument key="zh_TW" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations\validators.zh_TW.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations\validators.zh_TW.xlf</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations\security.zh_TW.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations\validators.zh_TW.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations\validators.zh_TW.xlf</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations\security.zh_TW.xlf</argument>
           </argument>
         </argument>
         <argument key="scanned_directories" type="collection">
-          <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations</argument>
-          <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations</argument>
-          <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations</argument>
-          <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE/translations</argument>
-          <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\framework-bundle/translations</argument>
-          <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\sensio\framework-extra-bundle\src/translations</argument>
-          <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\twig-bundle/translations</argument>
-          <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\web-profiler-bundle/translations</argument>
-          <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\monolog-bundle/translations</argument>
-          <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\debug-bundle/translations</argument>
-          <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\maker-bundle\src/translations</argument>
-          <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\doctrine\doctrine-bundle/translations</argument>
-          <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\doctrine\doctrine-migrations-bundle/translations</argument>
-          <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-bundle/translations</argument>
-          <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\twig\extra-bundle/translations</argument>
-          <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\webpack-encore-bundle\src/translations</argument>
+          <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations</argument>
+          <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations</argument>
+          <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations</argument>
+          <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE/translations</argument>
+          <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\framework-bundle/translations</argument>
+          <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\sensio\framework-extra-bundle\src/translations</argument>
+          <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\twig-bundle/translations</argument>
+          <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\web-profiler-bundle/translations</argument>
+          <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\monolog-bundle/translations</argument>
+          <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\debug-bundle/translations</argument>
+          <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\maker-bundle\src/translations</argument>
+          <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\doctrine\doctrine-bundle/translations</argument>
+          <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\doctrine\doctrine-migrations-bundle/translations</argument>
+          <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-bundle/translations</argument>
+          <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\twig\extra-bundle/translations</argument>
+          <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\webpack-encore-bundle\src/translations</argument>
         </argument>
         <argument key="cache_vary" type="collection">
           <argument key="scanned_directories" type="collection">
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\validator/Resources/translations</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/translations</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-core/Resources/translations</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\validator/Resources/translations</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/translations</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-core/Resources/translations</argument>
             <argument>translations</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\framework-bundle/translations</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\sensio\framework-extra-bundle\src/translations</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\twig-bundle/translations</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\web-profiler-bundle/translations</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\monolog-bundle/translations</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\debug-bundle/translations</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\maker-bundle\src/translations</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\doctrine\doctrine-bundle/translations</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\doctrine\doctrine-migrations-bundle/translations</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-bundle/translations</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\twig\extra-bundle/translations</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\webpack-encore-bundle\src/translations</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\framework-bundle/translations</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\sensio\framework-extra-bundle\src/translations</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\twig-bundle/translations</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\web-profiler-bundle/translations</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\monolog-bundle/translations</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\debug-bundle/translations</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\maker-bundle\src/translations</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\doctrine\doctrine-bundle/translations</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\doctrine\doctrine-migrations-bundle/translations</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-bundle/translations</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\twig\extra-bundle/translations</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\webpack-encore-bundle\src/translations</argument>
           </argument>
         </argument>
       </argument>
@@ -2016,7 +2093,7 @@
     <service id="debug.file_link_formatter" class="Symfony\Component\HttpKernel\Debug\FileLinkFormatter">
       <argument>null</argument>
       <argument type="service" id="request_stack" on-invalid="ignore"/>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE</argument>
+      <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE</argument>
       <argument type="service_closure" id="debug.file_link_formatter.url_format"/>
     </service>
     <service id="debug.stopwatch" class="Symfony\Component\Stopwatch\Stopwatch">
@@ -2613,7 +2690,7 @@
       <argument type="service" id=".service_locator.EyZUPFz.router.default"/>
       <argument>kernel::loadRoutes</argument>
       <argument type="collection">
-        <argument key="cache_dir">C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev</argument>
+        <argument key="cache_dir">C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev</argument>
         <argument key="debug">true</argument>
         <argument key="generator_class">Symfony\Component\Routing\Generator\CompiledUrlGenerator</argument>
         <argument key="generator_dumper_class">Symfony\Component\Routing\Generator\Dumper\CompiledUrlGeneratorDumper</argument>
@@ -2663,7 +2740,7 @@
       <argument type="service" id="request_stack"/>
       <argument type="service" id="router.request_context" on-invalid="ignore"/>
       <argument type="service" id="monolog.logger.request" on-invalid="ignore"/>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE</argument>
+      <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE</argument>
       <argument>true</argument>
     </service>
     <service id="Symfony\Bundle\FrameworkBundle\Controller\RedirectController" class="Symfony\Bundle\FrameworkBundle\Controller\RedirectController" public="true">
@@ -2730,13 +2807,13 @@
     <service id="annotations.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\AnnotationsCacheWarmer">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="annotations.reader"/>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev/annotations.php</argument>
+      <argument>C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev/annotations.php</argument>
       <argument>#^Symfony\\(?:Component\\HttpKernel\\|Bundle\\FrameworkBundle\\Controller\\(?!.*Controller$))#</argument>
       <argument>true</argument>
     </service>
     <service id="annotations.cache_adapter" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter">
       <tag name="container.hot_path"/>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev/annotations.php</argument>
+      <argument>C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev/annotations.php</argument>
       <argument type="service" id="cache.annotations"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
@@ -2754,7 +2831,7 @@
     </service>
     <service id="secrets.vault" class="Symfony\Bundle\FrameworkBundle\Secrets\SodiumVault">
       <tag name="container.env_var_loader"/>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE/config/secrets/%env(default:kernel.environment:APP_RUNTIME_ENV)%</argument>
+      <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE/config/secrets/%env(default:kernel.environment:APP_RUNTIME_ENV)%</argument>
       <argument type="service" id="secrets.decryption_key" on-invalid="ignore"/>
     </service>
     <service id="secrets.decryption_key" class="Symfony\Component\String\LazyString">
@@ -2763,7 +2840,7 @@
       <factory class="Symfony\Component\String\LazyString" method="fromCallable"/>
     </service>
     <service id="secrets.local_vault" class="Symfony\Bundle\FrameworkBundle\Secrets\DotenvVault">
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE/.env.dev.local</argument>
+      <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE/.env.dev.local</argument>
     </service>
     <service id="serializer" class="Symfony\Component\Serializer\Serializer" public="true">
       <tag name="container.private" package="symfony/framework-bundle" version="5.2"/>
@@ -2875,10 +2952,10 @@
           </service>
         </argument>
       </argument>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev/serialization.php</argument>
+      <argument>C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev/serialization.php</argument>
     </service>
     <service id="serializer.mapping.cache.symfony" class="Psr\Cache\CacheItemPoolInterface">
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev/serialization.php</argument>
+      <argument>C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev/serialization.php</argument>
       <argument type="service" id="cache.serializer"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
@@ -3012,7 +3089,7 @@
       <argument>true</argument>
     </service>
     <service id="session.storage.factory.mock_file" class="Symfony\Component\HttpFoundation\Session\Storage\MockFileSessionStorageFactory">
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev/sessions</argument>
+      <argument>C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev/sessions</argument>
       <argument>MOCKSESSID</argument>
       <argument type="service">
         <service class="Symfony\Component\HttpFoundation\Session\Storage\MetadataBag">
@@ -3044,7 +3121,7 @@
     <service id="session.handler.native_file" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\StrictSessionHandler">
       <argument type="service">
         <service class="Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeFileSessionHandler">
-          <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev/sessions</argument>
+          <argument>C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev/sessions</argument>
         </service>
       </argument>
     </service>
@@ -3097,7 +3174,7 @@
       <argument type="service" id="form.registry"/>
     </service>
     <service id="form.extension" class="Symfony\Component\Form\Extension\DependencyInjection\DependencyInjectionExtension">
-      <argument type="service" id=".service_locator.y4dplYt"/>
+      <argument type="service" id=".service_locator.xF5aK_N"/>
       <argument type="collection">
         <argument key="Symfony\Component\Form\Extension\Core\Type\FormType" type="iterator">
           <argument type="service" id="form.type_extension.form.transformation_failure_handling"/>
@@ -3203,7 +3280,7 @@
       </call>
       <call method="addXmlMappings">
         <argument type="collection">
-          <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\form/Resources/config/validation.xml</argument>
+          <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\form/Resources/config/validation.xml</argument>
         </argument>
       </call>
       <call method="enableAnnotationMapping">
@@ -3231,10 +3308,10 @@
     <service id="validator.mapping.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\ValidatorCacheWarmer">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="validator.builder"/>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev/validation.php</argument>
+      <argument>C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev/validation.php</argument>
     </service>
     <service id="validator.mapping.cache.adapter" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter">
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev/validation.php</argument>
+      <argument>C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev/validation.php</argument>
       <argument type="service" id="cache.validator"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
@@ -3440,7 +3517,7 @@
       </call>
     </service>
     <service id="profiler.storage" class="Symfony\Component\HttpKernel\Profiler\FileProfilerStorage">
-      <argument>file:C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev/profiler</argument>
+      <argument>file:C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev/profiler</argument>
     </service>
     <service id="profiler_listener" class="Symfony\Component\HttpKernel\EventListener\ProfilerListener">
       <tag name="kernel.event_subscriber"/>
@@ -3487,7 +3564,7 @@
       <tag name="monolog.logger" channel="profiler"/>
       <tag name="data_collector" template="@WebProfiler/Collector/logger.html.twig" id="logger" priority="300"/>
       <argument type="service" id="monolog.logger.profiler" on-invalid="ignore"/>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev/App_KernelDevDebugContainer</argument>
+      <argument>C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev/App_KernelDevDebugContainer</argument>
       <argument type="service" id="request_stack" on-invalid="ignore"/>
     </service>
     <service id="data_collector.time" class="Symfony\Component\HttpKernel\DataCollector\TimeDataCollector">
@@ -3686,7 +3763,7 @@
       <argument type="service" id="twig.loader.native_filesystem"/>
       <argument type="collection">
         <argument key="autoescape">name</argument>
-        <argument key="cache">C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev/twig</argument>
+        <argument key="cache">C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev/twig</argument>
         <argument key="charset">UTF-8</argument>
         <argument key="debug">true</argument>
         <argument key="strict_variables">true</argument>
@@ -3798,10 +3875,10 @@
     <service id="twig.template_iterator" class="Symfony\Bundle\TwigBundle\TemplateIterator">
       <argument type="service" id="kernel"/>
       <argument type="collection">
-        <argument key="C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\twig-bridge/Resources/views/Email">email</argument>
-        <argument key="C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\twig-bridge/Resources/views/Form">null</argument>
+        <argument key="C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\twig-bridge/Resources/views/Email">email</argument>
+        <argument key="C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\twig-bridge/Resources/views/Form">null</argument>
       </argument>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE/templates</argument>
+      <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE/templates</argument>
     </service>
     <service id="twig.template_cache_warmer" class="Symfony\Bundle\TwigBundle\CacheWarmer\TemplateCacheWarmer">
       <tag name="kernel.cache_warmer"/>
@@ -3812,60 +3889,60 @@
     <service id="twig.loader.native_filesystem" class="Twig\Loader\FilesystemLoader">
       <tag name="twig.loader"/>
       <argument type="collection"/>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE</argument>
+      <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE</argument>
       <call method="addPath">
-        <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\web-profiler-bundle/Resources/views</argument>
+        <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\web-profiler-bundle/Resources/views</argument>
         <argument>WebProfiler</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\web-profiler-bundle/Resources/views</argument>
+        <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\web-profiler-bundle/Resources/views</argument>
         <argument>!WebProfiler</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\debug-bundle/Resources/views</argument>
+        <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\debug-bundle/Resources/views</argument>
         <argument>Debug</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\debug-bundle/Resources/views</argument>
+        <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\debug-bundle/Resources/views</argument>
         <argument>!Debug</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\doctrine\doctrine-bundle/Resources/views</argument>
+        <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\doctrine\doctrine-bundle/Resources/views</argument>
         <argument>Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\doctrine\doctrine-bundle/Resources/views</argument>
+        <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\doctrine\doctrine-bundle/Resources/views</argument>
         <argument>!Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\doctrine\doctrine-migrations-bundle/Resources/views</argument>
+        <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\doctrine\doctrine-migrations-bundle/Resources/views</argument>
         <argument>DoctrineMigrations</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\doctrine\doctrine-migrations-bundle/Resources/views</argument>
+        <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\doctrine\doctrine-migrations-bundle/Resources/views</argument>
         <argument>!DoctrineMigrations</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-bundle/Resources/views</argument>
+        <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-bundle/Resources/views</argument>
         <argument>Security</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\security-bundle/Resources/views</argument>
+        <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\security-bundle/Resources/views</argument>
         <argument>!Security</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE/templates</argument>
+        <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE/templates</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\twig-bridge/Resources/views/Email</argument>
+        <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\twig-bridge/Resources/views/Email</argument>
         <argument>email</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\twig-bridge/Resources/views/Email</argument>
+        <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\twig-bridge/Resources/views/Email</argument>
         <argument>!email</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\vendor\symfony\twig-bridge/Resources/views/Form</argument>
+        <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\vendor\symfony\twig-bridge/Resources/views/Form</argument>
       </call>
     </service>
     <service id="twig.loader.chain" class="Twig\Loader\ChainLoader"/>
@@ -3891,7 +3968,7 @@
     <service id="twig.extension.code" class="Symfony\Bridge\Twig\Extension\CodeExtension">
       <tag name="twig.extension"/>
       <argument type="service" id="debug.file_link_formatter" on-invalid="ignore"/>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE</argument>
+      <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE</argument>
       <argument>UTF-8</argument>
     </service>
     <service id="twig.extension.routing" class="Symfony\Bridge\Twig\Extension\RoutingExtension">
@@ -3977,9 +4054,9 @@
       <tag name="console.command"/>
       <tag name="container.no_preload"/>
       <argument type="service" id="twig"/>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE</argument>
+      <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE</argument>
       <argument>%kernel.bundles_metadata%</argument>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE/templates</argument>
+      <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE/templates</argument>
       <argument type="service" id="debug.file_link_formatter" on-invalid="null"/>
       <call method="setName">
         <argument>debug:twig</argument>
@@ -4013,7 +4090,7 @@
       <argument type="service" id="twig"/>
       <argument>%data_collector.templates%</argument>
       <argument type="service" id="web_profiler.csp.handler"/>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE</argument>
+      <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE</argument>
     </service>
     <service id="web_profiler.controller.router" class="Symfony\Bundle\WebProfilerBundle\Controller\RouterController" public="true">
       <argument type="service" id="profiler" on-invalid="null"/>
@@ -4107,7 +4184,7 @@
     <service id="monolog.processor.psr_log_message" class="Monolog\Processor\PsrLogMessageProcessor"/>
     <service id="monolog.handler.main" class="Monolog\Handler\StreamHandler">
       <tag name="kernel.reset" method="reset"/>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\log/dev.log</argument>
+      <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\var\log/dev.log</argument>
       <argument>100</argument>
       <argument>true</argument>
       <argument>null</argument>
@@ -4167,7 +4244,7 @@
         <argument key="source" type="service">
           <service class="Symfony\Component\VarDumper\Dumper\ContextProvider\SourceContextProvider">
             <argument>UTF-8</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE</argument>
             <argument type="service" id="debug.file_link_formatter" on-invalid="null"/>
           </service>
         </argument>
@@ -4189,7 +4266,7 @@
         <argument key="source" type="service">
           <service class="Symfony\Component\VarDumper\Dumper\ContextProvider\SourceContextProvider">
             <argument>UTF-8</argument>
-            <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE</argument>
+            <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE</argument>
             <argument type="service" id="debug.file_link_formatter" on-invalid="null"/>
           </service>
         </argument>
@@ -4245,8 +4322,8 @@
       <argument type="service" id="filesystem"/>
       <argument type="service" id="maker.autoloader_util"/>
       <argument type="service" id="maker.file_link_formatter"/>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE</argument>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE/templates</argument>
+      <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE</argument>
+      <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE/templates</argument>
     </service>
     <service id="maker.autoloader_finder" class="Symfony\Bundle\MakerBundle\Util\ComposerAutoloaderFinder">
       <argument>App</argument>
@@ -4409,7 +4486,7 @@
     </service>
     <service id="maker.maker.make_migration" class="Symfony\Bundle\MakerBundle\Maker\MakeMigration">
       <tag name="maker.command"/>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE</argument>
+      <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE</argument>
     </service>
     <service id="maker.maker.make_stimulus_controller" class="Symfony\Bundle\MakerBundle\Maker\MakeStimulusController">
       <tag name="maker.command"/>
@@ -4561,7 +4638,7 @@
       <tag name="doctrine.middleware" connection="default"/>
       <argument type="service" id="monolog.logger.doctrine"/>
     </service>
-    <service id=".1_ServiceLocator~5elMk2V" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".1_ServiceLocator~VhKVTQz" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <argument type="collection"/>
     </service>
     <service id="doctrine.orm.proxy_cache_warmer" class="Symfony\Bridge\Doctrine\CacheWarmer\ProxyCacheWarmer">
@@ -4761,7 +4838,7 @@
         <argument type="service" id=".doctrine.orm.default_metadata_driver"/>
       </call>
       <call method="setProxyDir">
-        <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev/doctrine/orm/Proxies</argument>
+        <argument>C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev/doctrine/orm/Proxies</argument>
       </call>
       <call method="setProxyNamespace">
         <argument>Proxies</argument>
@@ -4791,7 +4868,7 @@
     <service id="doctrine.orm.default_annotation_metadata_driver" class="Doctrine\ORM\Mapping\Driver\AnnotationDriver">
       <argument type="service" id="annotations.cached_reader"/>
       <argument type="collection">
-        <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\src\Entity</argument>
+        <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE\src\Entity</argument>
       </argument>
     </service>
     <service id="cache.doctrine.orm.default.metadata" class="Symfony\Component\Cache\Adapter\ArrayAdapter"/>
@@ -4857,7 +4934,7 @@
     <service id="doctrine.migrations.configuration" class="Doctrine\Migrations\Configuration\Configuration">
       <call method="addMigrationsDirectory">
         <argument>DoctrineMigrations</argument>
-        <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE/migrations</argument>
+        <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE/migrations</argument>
       </call>
       <call method="setAllOrNothing">
         <argument>false</argument>
@@ -5114,6 +5191,14 @@
       <argument type="service" id="request_stack" on-invalid="null"/>
       <argument type="service" id="router.default" on-invalid="null"/>
       <argument type="service" id="security.token_storage" on-invalid="null"/>
+      <call method="registerListener">
+        <argument>main</argument>
+        <argument>app_logout</argument>
+        <argument>logout</argument>
+        <argument>_csrf_token</argument>
+        <argument>null</argument>
+        <argument>null</argument>
+      </call>
     </service>
     <service id="security.user.provider.missing" class="Symfony\Component\Security\Core\User\MissingUserProvider" abstract="true">
       <argument type="abstract">firewall</argument>
@@ -5495,7 +5580,9 @@
       <argument type="service" id=".service_locator.zJyh7qS"/>
       <argument type="service" id=".service_locator.jlyTfzM"/>
       <argument type="collection">
-        <argument key="main" type="collection"/>
+        <argument key="main" type="collection">
+          <argument type="service" id="App\Security\AppCustomAuthenticator"/>
+        </argument>
       </argument>
       <argument>true</argument>
       <call method="setName">
@@ -5542,10 +5629,12 @@
       <argument>false</argument>
       <argument>security.user.provider.concrete.app_user_provider</argument>
       <argument>main</argument>
+      <argument>App\Security\AppCustomAuthenticator</argument>
       <argument>null</argument>
       <argument>null</argument>
-      <argument>null</argument>
-      <argument type="collection"/>
+      <argument type="collection">
+        <argument>App\Security\AppCustomAuthenticator</argument>
+      </argument>
       <argument>null</argument>
     </service>
     <service id="security.listener.main.user_provider" class="Symfony\Component\Security\Http\EventListener\UserProviderListener">
@@ -5567,6 +5656,22 @@
         <argument type="collection">
           <argument type="service_closure" id="security.listener.session.main"/>
           <argument>onSuccessfulLogin</argument>
+        </argument>
+        <argument>0</argument>
+      </call>
+      <call method="addListener">
+        <argument>Symfony\Component\Security\Http\Event\LogoutEvent</argument>
+        <argument type="collection">
+          <argument type="service_closure" id="security.logout.listener.default.main"/>
+          <argument>onLogout</argument>
+        </argument>
+        <argument>64</argument>
+      </call>
+      <call method="addListener">
+        <argument>Symfony\Component\Security\Http\Event\LogoutEvent</argument>
+        <argument type="collection">
+          <argument type="service_closure" id="security.logout.listener.session.main"/>
+          <argument>onLogout</argument>
         </argument>
         <argument>0</argument>
       </call>
@@ -5647,9 +5752,29 @@
       <tag name="kernel.event_subscriber" dispatcher="security.event_dispatcher.main"/>
       <argument type="service" id="security.authentication.session_strategy"/>
     </service>
+    <service id="security.logout_listener.main" class="Symfony\Component\Security\Http\Firewall\LogoutListener">
+      <argument type="service" id="security.token_storage"/>
+      <argument type="service" id="security.http_utils"/>
+      <argument type="service" id="security.event_dispatcher.main"/>
+      <argument type="collection">
+        <argument key="csrf_parameter">_csrf_token</argument>
+        <argument key="csrf_token_id">logout</argument>
+        <argument key="logout_path">app_logout</argument>
+      </argument>
+    </service>
+    <service id="security.logout.listener.default.main" class="Symfony\Component\Security\Http\EventListener\DefaultLogoutListener">
+      <tag name="kernel.event_subscriber" dispatcher="security.event_dispatcher.main"/>
+      <argument type="service" id="security.http_utils"/>
+      <argument>/</argument>
+    </service>
+    <service id="security.logout.listener.session.main" class="Symfony\Component\Security\Http\EventListener\SessionLogoutListener">
+      <tag name="kernel.event_subscriber" dispatcher="security.event_dispatcher.main"/>
+    </service>
     <service id="security.authenticator.manager.main" class="Symfony\Component\Security\Http\Authentication\AuthenticatorManager">
       <tag name="monolog.logger" channel="security"/>
-      <argument type="collection"/>
+      <argument type="collection">
+        <argument type="service" id="App\Security\AppCustomAuthenticator"/>
+      </argument>
       <argument type="service" id="security.token_storage"/>
       <argument type="service" id="security.event_dispatcher.main"/>
       <argument>main</argument>
@@ -5670,7 +5795,7 @@
       <argument type="service" id="security.authentication.trust_resolver"/>
       <argument type="service" id="security.http_utils"/>
       <argument>main</argument>
-      <argument>null</argument>
+      <argument type="service" id="App\Security\AppCustomAuthenticator"/>
       <argument>null</argument>
       <argument>null</argument>
       <argument type="service" id="monolog.logger.security" on-invalid="null"/>
@@ -5684,7 +5809,7 @@
         <argument type="service" id="security.access_listener"/>
       </argument>
       <argument type="service" id="security.exception_listener.main"/>
-      <argument>null</argument>
+      <argument type="service" id="security.logout_listener.main"/>
       <argument type="service" id="security.firewall.map.config.main"/>
       <argument type="service" id="security.untracked_token_storage"/>
     </service>
@@ -5725,7 +5850,7 @@
       </call>
     </service>
     <service id="twig.missing_extension_suggestor" class="Twig\Extra\TwigExtraBundle\MissingExtensionSuggestor"/>
-    <service id=".1_ServiceLocator~WXMXu8P" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".1_ServiceLocator~k4_MZnA" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="webpack_encore.entrypoint_lookup_collection" type="service_closure" id="webpack_encore.entrypoint_lookup_collection"/>
@@ -5749,7 +5874,7 @@
     </service>
     <service id="webpack_encore.twig_entry_files_extension" class="Symfony\WebpackEncoreBundle\Twig\EntryFilesTwigExtension">
       <tag name="twig.extension"/>
-      <argument type="service" id=".1_ServiceLocator~WXMXu8P"/>
+      <argument type="service" id=".1_ServiceLocator~k4_MZnA"/>
     </service>
     <service id="webpack_encore.twig_stimulus_extension" class="Symfony\WebpackEncoreBundle\Twig\StimulusTwigExtension">
       <tag name="twig.extension"/>
@@ -5757,12 +5882,12 @@
     <service id="webpack_encore.entrypoint_lookup.cache_warmer" class="Symfony\WebpackEncoreBundle\CacheWarmer\EntrypointCacheWarmer">
       <tag name="kernel.cache_warmer"/>
       <argument type="collection">
-        <argument key="_default">C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE/public/build/entrypoints.json</argument>
+        <argument key="_default">C:\Users\Mouadh\Documents\GitHub\finalPFE/public/build/entrypoints.json</argument>
       </argument>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev/webpack_encore.cache.php</argument>
+      <argument>C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev/webpack_encore.cache.php</argument>
     </service>
     <service id="webpack_encore.cache" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter">
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev/webpack_encore.cache.php</argument>
+      <argument>C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev/webpack_encore.cache.php</argument>
       <argument type="service" id="cache.webpack_encore"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
@@ -5788,7 +5913,7 @@
     </service>
     <service id="webpack_encore.entrypoint_lookup[_default]" class="Symfony\WebpackEncoreBundle\Asset\EntrypointLookup">
       <tag name="kernel.reset" method="reset"/>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE/public/build/entrypoints.json</argument>
+      <argument>C:\Users\Mouadh\Documents\GitHub\finalPFE/public/build/entrypoints.json</argument>
       <argument>null</argument>
       <argument>_default</argument>
       <argument>false</argument>
@@ -5799,9 +5924,42 @@
         <argument key="_default" type="service_closure" id="webpack_encore.entrypoint_lookup[_default]"/>
       </argument>
     </service>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\AttachedFileController" class="App\Controller\AttachedFileController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\AttachedFileController" class="App\Controller\AttachedFileController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\AttachedFileController" class="App\Controller\AttachedFileController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\DeparementController" class="App\Controller\DeparementController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\DeparementController" class="App\Controller\DeparementController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\DeparementController" class="App\Controller\DeparementController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\HomeController" class="App\Controller\HomeController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\HomeController" class="App\Controller\HomeController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\HomeController" class="App\Controller\HomeController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\IncidentController" class="App\Controller\IncidentController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\IncidentController" class="App\Controller\IncidentController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\IncidentController" class="App\Controller\IncidentController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\RegistrationController" class="App\Controller\RegistrationController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\RegistrationController" class="App\Controller\RegistrationController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\RegistrationController" class="App\Controller\RegistrationController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\SecurityController" class="App\Controller\SecurityController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\SecurityController" class="App\Controller\SecurityController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\SecurityController" class="App\Controller\SecurityController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\TaskController" class="App\Controller\TaskController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\TaskController" class="App\Controller\TaskController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\TaskController" class="App\Controller\TaskController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\UserController" class="App\Controller\UserController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\UserController" class="App\Controller\UserController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\UserController" class="App\Controller\UserController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\AttachedFileType" class="App\Form\AttachedFileType" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Form\AttachedFileType" class="App\Form\AttachedFileType" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\DeparementType" class="App\Form\DeparementType" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Form\DeparementType" class="App\Form\DeparementType" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\IncidentType" class="App\Form\IncidentType" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Form\IncidentType" class="App\Form\IncidentType" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\RegistrationFormType" class="App\Form\RegistrationFormType" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Form\RegistrationFormType" class="App\Form\RegistrationFormType" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\TaskType" class="App\Form\TaskType" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Form\TaskType" class="App\Form\TaskType" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\UserType" class="App\Form\UserType" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Form\UserType" class="App\Form\UserType" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\AttachedFileRepository" class="App\Repository\AttachedFileRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\AttachedFileRepository" class="App\Repository\AttachedFileRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\DeparementRepository" class="App\Repository\DeparementRepository" autowire="true" abstract="true"/>
@@ -6140,15 +6298,179 @@
         <argument key="loader" type="service_closure" id=".errored..service_locator.KfbR3DY.Symfony\Component\Config\Loader\LoaderInterface"/>
       </argument>
     </service>
-    <service id=".service_locator.zxMugcL" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.jFcPcms" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
+        <argument key="attachedFileRepository" type="service_closure" id="App\Repository\AttachedFileRepository"/>
+      </argument>
+    </service>
+    <service id=".service_locator.wPLyNuL" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="attachedFile" type="service_closure" id=".errored..service_locator.wPLyNuL.App\Entity\AttachedFile"/>
+      </argument>
+    </service>
+    <service id=".service_locator.Z24SyeC" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="attachedFile" type="service_closure" id=".errored..service_locator.Z24SyeC.App\Entity\AttachedFile"/>
+        <argument key="attachedFileRepository" type="service_closure" id="App\Repository\AttachedFileRepository"/>
+      </argument>
+    </service>
+    <service id=".service_locator.6198kO2" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="deparementRepository" type="service_closure" id="App\Repository\DeparementRepository"/>
+      </argument>
+    </service>
+    <service id=".service_locator.jlYZBDk" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="deparement" type="service_closure" id=".errored..service_locator.jlYZBDk.App\Entity\Deparement"/>
+      </argument>
+    </service>
+    <service id=".service_locator.IZlzbt7" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="deparement" type="service_closure" id=".errored..service_locator.IZlzbt7.App\Entity\Deparement"/>
+        <argument key="deparementRepository" type="service_closure" id="App\Repository\DeparementRepository"/>
+      </argument>
+    </service>
+    <service id=".service_locator.ClFhw5X" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="incidentRepository" type="service_closure" id="App\Repository\IncidentRepository"/>
+      </argument>
+    </service>
+    <service id=".service_locator.0gg6_jH" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="incident" type="service_closure" id=".errored..service_locator.0gg6_jH.App\Entity\Incident"/>
+      </argument>
+    </service>
+    <service id=".service_locator.zAmOOyF" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="incident" type="service_closure" id=".errored..service_locator.zAmOOyF.App\Entity\Incident"/>
+        <argument key="incidentRepository" type="service_closure" id="App\Repository\IncidentRepository"/>
+      </argument>
+    </service>
+    <service id=".service_locator.B3Rkt.q" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="authenticator" type="service_closure" id="App\Security\AppCustomAuthenticator"/>
+        <argument key="entityManager" type="service_closure" id="doctrine.orm.default_entity_manager"/>
+        <argument key="userAuthenticator" type="service_closure" id="security.user_authenticator"/>
+        <argument key="userPasswordHasher" type="service_closure" id="security.user_password_hasher"/>
+      </argument>
+    </service>
+    <service id=".service_locator.UDgw6Ol" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="authenticationUtils" type="service_closure" id="security.authentication_utils"/>
+      </argument>
+    </service>
+    <service id=".service_locator.OSbocZ8" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="taskRepository" type="service_closure" id="App\Repository\TaskRepository"/>
+      </argument>
+    </service>
+    <service id=".service_locator.TfvLzuL" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="task" type="service_closure" id=".errored..service_locator.TfvLzuL.App\Entity\Task"/>
+      </argument>
+    </service>
+    <service id=".service_locator.gfSrDu1" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="task" type="service_closure" id=".errored..service_locator.gfSrDu1.App\Entity\Task"/>
+        <argument key="taskRepository" type="service_closure" id="App\Repository\TaskRepository"/>
+      </argument>
+    </service>
+    <service id=".service_locator..Ae5NXw" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="userRepository" type="service_closure" id="App\Repository\UserRepository"/>
+      </argument>
+    </service>
+    <service id=".service_locator.ch4Jgvl" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="user" type="service_closure" id=".errored..service_locator.ch4Jgvl.App\Entity\User"/>
+      </argument>
+    </service>
+    <service id=".service_locator.4MF6DUv" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="user" type="service_closure" id=".errored..service_locator.4MF6DUv.App\Entity\User"/>
+        <argument key="userRepository" type="service_closure" id="App\Repository\UserRepository"/>
+      </argument>
+    </service>
+    <service id=".service_locator.qAb9aXo" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="App\Controller\AttachedFileController::delete" type="service_closure" id=".service_locator.Z24SyeC"/>
+        <argument key="App\Controller\AttachedFileController::edit" type="service_closure" id=".service_locator.Z24SyeC"/>
+        <argument key="App\Controller\AttachedFileController::index" type="service_closure" id=".service_locator.jFcPcms"/>
+        <argument key="App\Controller\AttachedFileController::new" type="service_closure" id=".service_locator.jFcPcms"/>
+        <argument key="App\Controller\AttachedFileController::show" type="service_closure" id=".service_locator.wPLyNuL"/>
+        <argument key="App\Controller\DeparementController::delete" type="service_closure" id=".service_locator.IZlzbt7"/>
+        <argument key="App\Controller\DeparementController::edit" type="service_closure" id=".service_locator.IZlzbt7"/>
+        <argument key="App\Controller\DeparementController::index" type="service_closure" id=".service_locator.6198kO2"/>
+        <argument key="App\Controller\DeparementController::new" type="service_closure" id=".service_locator.6198kO2"/>
+        <argument key="App\Controller\DeparementController::show" type="service_closure" id=".service_locator.jlYZBDk"/>
+        <argument key="App\Controller\IncidentController::delete" type="service_closure" id=".service_locator.zAmOOyF"/>
+        <argument key="App\Controller\IncidentController::edit" type="service_closure" id=".service_locator.zAmOOyF"/>
+        <argument key="App\Controller\IncidentController::index" type="service_closure" id=".service_locator.ClFhw5X"/>
+        <argument key="App\Controller\IncidentController::new" type="service_closure" id=".service_locator.ClFhw5X"/>
+        <argument key="App\Controller\IncidentController::show" type="service_closure" id=".service_locator.0gg6_jH"/>
+        <argument key="App\Controller\RegistrationController::register" type="service_closure" id=".service_locator.B3Rkt.q"/>
+        <argument key="App\Controller\SecurityController::login" type="service_closure" id=".service_locator.UDgw6Ol"/>
+        <argument key="App\Controller\TaskController::delete" type="service_closure" id=".service_locator.gfSrDu1"/>
+        <argument key="App\Controller\TaskController::edit" type="service_closure" id=".service_locator.gfSrDu1"/>
+        <argument key="App\Controller\TaskController::index" type="service_closure" id=".service_locator.OSbocZ8"/>
+        <argument key="App\Controller\TaskController::new" type="service_closure" id=".service_locator.OSbocZ8"/>
+        <argument key="App\Controller\TaskController::show" type="service_closure" id=".service_locator.TfvLzuL"/>
+        <argument key="App\Controller\UserController::delete" type="service_closure" id=".service_locator.4MF6DUv"/>
+        <argument key="App\Controller\UserController::edit" type="service_closure" id=".service_locator.4MF6DUv"/>
+        <argument key="App\Controller\UserController::index" type="service_closure" id=".service_locator..Ae5NXw"/>
+        <argument key="App\Controller\UserController::new" type="service_closure" id=".service_locator..Ae5NXw"/>
+        <argument key="App\Controller\UserController::show" type="service_closure" id=".service_locator.ch4Jgvl"/>
         <argument key="App\Kernel::loadRoutes" type="service_closure" id=".service_locator.KfbR3DY"/>
         <argument key="App\Kernel::registerContainerConfiguration" type="service_closure" id=".service_locator.KfbR3DY"/>
         <argument key="App\Kernel::terminate" type="service_closure" id=".service_locator.KfwZsne"/>
         <argument key="kernel::loadRoutes" type="service_closure" id=".service_locator.KfbR3DY"/>
         <argument key="kernel::registerContainerConfiguration" type="service_closure" id=".service_locator.KfbR3DY"/>
         <argument key="kernel::terminate" type="service_closure" id=".service_locator.KfwZsne"/>
+        <argument key="App\Controller\AttachedFileController:delete" type="service_closure" id=".service_locator.Z24SyeC"/>
+        <argument key="App\Controller\AttachedFileController:edit" type="service_closure" id=".service_locator.Z24SyeC"/>
+        <argument key="App\Controller\AttachedFileController:index" type="service_closure" id=".service_locator.jFcPcms"/>
+        <argument key="App\Controller\AttachedFileController:new" type="service_closure" id=".service_locator.jFcPcms"/>
+        <argument key="App\Controller\AttachedFileController:show" type="service_closure" id=".service_locator.wPLyNuL"/>
+        <argument key="App\Controller\DeparementController:delete" type="service_closure" id=".service_locator.IZlzbt7"/>
+        <argument key="App\Controller\DeparementController:edit" type="service_closure" id=".service_locator.IZlzbt7"/>
+        <argument key="App\Controller\DeparementController:index" type="service_closure" id=".service_locator.6198kO2"/>
+        <argument key="App\Controller\DeparementController:new" type="service_closure" id=".service_locator.6198kO2"/>
+        <argument key="App\Controller\DeparementController:show" type="service_closure" id=".service_locator.jlYZBDk"/>
+        <argument key="App\Controller\IncidentController:delete" type="service_closure" id=".service_locator.zAmOOyF"/>
+        <argument key="App\Controller\IncidentController:edit" type="service_closure" id=".service_locator.zAmOOyF"/>
+        <argument key="App\Controller\IncidentController:index" type="service_closure" id=".service_locator.ClFhw5X"/>
+        <argument key="App\Controller\IncidentController:new" type="service_closure" id=".service_locator.ClFhw5X"/>
+        <argument key="App\Controller\IncidentController:show" type="service_closure" id=".service_locator.0gg6_jH"/>
+        <argument key="App\Controller\RegistrationController:register" type="service_closure" id=".service_locator.B3Rkt.q"/>
+        <argument key="App\Controller\SecurityController:login" type="service_closure" id=".service_locator.UDgw6Ol"/>
+        <argument key="App\Controller\TaskController:delete" type="service_closure" id=".service_locator.gfSrDu1"/>
+        <argument key="App\Controller\TaskController:edit" type="service_closure" id=".service_locator.gfSrDu1"/>
+        <argument key="App\Controller\TaskController:index" type="service_closure" id=".service_locator.OSbocZ8"/>
+        <argument key="App\Controller\TaskController:new" type="service_closure" id=".service_locator.OSbocZ8"/>
+        <argument key="App\Controller\TaskController:show" type="service_closure" id=".service_locator.TfvLzuL"/>
+        <argument key="App\Controller\UserController:delete" type="service_closure" id=".service_locator.4MF6DUv"/>
+        <argument key="App\Controller\UserController:edit" type="service_closure" id=".service_locator.4MF6DUv"/>
+        <argument key="App\Controller\UserController:index" type="service_closure" id=".service_locator..Ae5NXw"/>
+        <argument key="App\Controller\UserController:new" type="service_closure" id=".service_locator..Ae5NXw"/>
+        <argument key="App\Controller\UserController:show" type="service_closure" id=".service_locator.ch4Jgvl"/>
         <argument key="kernel:loadRoutes" type="service_closure" id=".service_locator.KfbR3DY"/>
         <argument key="kernel:registerContainerConfiguration" type="service_closure" id=".service_locator.KfbR3DY"/>
         <argument key="kernel:terminate" type="service_closure" id=".service_locator.KfwZsne"/>
@@ -6213,9 +6535,15 @@
       <argument type="service" id="debug.argument_resolver.not_tagged_controller.inner"/>
       <argument type="service" id="debug.stopwatch"/>
     </service>
-    <service id=".service_locator.y4dplYt" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.xF5aK_N" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
+        <argument key="App\Form\AttachedFileType" type="service_closure" id="App\Form\AttachedFileType"/>
+        <argument key="App\Form\DeparementType" type="service_closure" id="App\Form\DeparementType"/>
+        <argument key="App\Form\IncidentType" type="service_closure" id="App\Form\IncidentType"/>
+        <argument key="App\Form\RegistrationFormType" type="service_closure" id="App\Form\RegistrationFormType"/>
+        <argument key="App\Form\TaskType" type="service_closure" id="App\Form\TaskType"/>
+        <argument key="App\Form\UserType" type="service_closure" id="App\Form\UserType"/>
         <argument key="Symfony\Bridge\Doctrine\Form\Type\EntityType" type="service_closure" id="form.type.entity"/>
         <argument key="Symfony\Component\Form\Extension\Core\Type\ChoiceType" type="service_closure" id="form.type.choice"/>
         <argument key="Symfony\Component\Form\Extension\Core\Type\ColorType" type="service_closure" id="form.type.color"/>
@@ -6493,9 +6821,51 @@
         <argument key="twig" type="service_closure" id="twig" on-invalid="ignore"/>
       </argument>
     </service>
+    <service id=".service_locator.GNc8e5B.App\Controller\AttachedFileController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\AttachedFileController"/>
+      <argument>App\Controller\AttachedFileController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.GNc8e5B" method="withContext"/>
+    </service>
+    <service id=".service_locator.GNc8e5B.App\Controller\DeparementController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\DeparementController"/>
+      <argument>App\Controller\DeparementController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.GNc8e5B" method="withContext"/>
+    </service>
     <service id=".service_locator.GNc8e5B.App\Controller\HomeController" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator_context" id="App\Controller\HomeController"/>
       <argument>App\Controller\HomeController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.GNc8e5B" method="withContext"/>
+    </service>
+    <service id=".service_locator.GNc8e5B.App\Controller\IncidentController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\IncidentController"/>
+      <argument>App\Controller\IncidentController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.GNc8e5B" method="withContext"/>
+    </service>
+    <service id=".service_locator.GNc8e5B.App\Controller\RegistrationController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\RegistrationController"/>
+      <argument>App\Controller\RegistrationController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.GNc8e5B" method="withContext"/>
+    </service>
+    <service id=".service_locator.GNc8e5B.App\Controller\SecurityController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\SecurityController"/>
+      <argument>App\Controller\SecurityController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.GNc8e5B" method="withContext"/>
+    </service>
+    <service id=".service_locator.GNc8e5B.App\Controller\TaskController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\TaskController"/>
+      <argument>App\Controller\TaskController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.GNc8e5B" method="withContext"/>
+    </service>
+    <service id=".service_locator.GNc8e5B.App\Controller\UserController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\UserController"/>
+      <argument>App\Controller\UserController</argument>
       <argument type="service" id="service_container"/>
       <factory service=".service_locator.GNc8e5B" method="withContext"/>
     </service>
@@ -6673,12 +7043,12 @@
       <argument type="service" id="security.token_storage"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">
-      <argument type="service" id=".service_locator.zxMugcL"/>
+      <argument type="service" id=".service_locator.qAb9aXo"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver">
-      <argument type="service" id=".service_locator.zxMugcL"/>
+      <argument type="service" id=".service_locator.qAb9aXo"/>
     </service>
     <service id=".debug.http_client.inner" class="Symfony\Contracts\HttpClient\HttpClientInterface">
       <argument type="collection"/>
@@ -6696,6 +7066,16 @@
     </service>
     <service id=".errored..service_locator.KfwZsne.Symfony\Component\HttpFoundation\Response" class="Symfony\Component\HttpFoundation\Response"/>
     <service id=".errored..service_locator.KfbR3DY.Symfony\Component\Config\Loader\LoaderInterface" class="Symfony\Component\Config\Loader\LoaderInterface"/>
+    <service id=".errored..service_locator.wPLyNuL.App\Entity\AttachedFile" class="App\Entity\AttachedFile"/>
+    <service id=".errored..service_locator.Z24SyeC.App\Entity\AttachedFile" class="App\Entity\AttachedFile"/>
+    <service id=".errored..service_locator.jlYZBDk.App\Entity\Deparement" class="App\Entity\Deparement"/>
+    <service id=".errored..service_locator.IZlzbt7.App\Entity\Deparement" class="App\Entity\Deparement"/>
+    <service id=".errored..service_locator.0gg6_jH.App\Entity\Incident" class="App\Entity\Incident"/>
+    <service id=".errored..service_locator.zAmOOyF.App\Entity\Incident" class="App\Entity\Incident"/>
+    <service id=".errored..service_locator.TfvLzuL.App\Entity\Task" class="App\Entity\Task"/>
+    <service id=".errored..service_locator.gfSrDu1.App\Entity\Task" class="App\Entity\Task"/>
+    <service id=".errored..service_locator.ch4Jgvl.App\Entity\User" class="App\Entity\User"/>
+    <service id=".errored..service_locator.4MF6DUv.App\Entity\User" class="App\Entity\User"/>
     <service id=".console.command.about.lazy" class="Symfony\Component\Console\Command\LazyCommand">
       <argument>about</argument>
       <argument type="collection"/>
@@ -7320,77 +7700,77 @@
       </argument>
     </service>
     <service id="cache.app.recorder_inner" class="Symfony\Component\Cache\Adapter\FilesystemAdapter">
-      <argument>petmokCWeT</argument>
+      <argument>T0rARzqkCP</argument>
       <argument>0</argument>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev/pools/app</argument>
+      <argument>C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev/pools/app</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       </call>
     </service>
     <service id="cache.system.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>lM6qDOjTG6</argument>
+      <argument>pgpqnsxcJQ</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.validator.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>+QpAFPRsOg</argument>
+      <argument>fkEZyr2zDn</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.serializer.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>GOf6b-FMT6</argument>
+      <argument>4Cts8341wF</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.annotations.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>9vpBfz8DAe</argument>
+      <argument>foWf0+ZRxt</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.property_info.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>-+uqxNzM+I</argument>
+      <argument>Oy4NV73ZX0</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.validator_expression_language.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>n90OrftKPl</argument>
+      <argument>tSWGP9MVqc</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.doctrine.orm.default.result.recorder_inner" class="Symfony\Component\Cache\Adapter\ArrayAdapter"/>
     <service id="cache.doctrine.orm.default.query.recorder_inner" class="Symfony\Component\Cache\Adapter\ArrayAdapter"/>
     <service id="cache.security_expression_language.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>Yd+2y62nKE</argument>
+      <argument>wg2Gk3ox9G</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.webpack_encore.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>YR-M7AqqlX</argument>
+      <argument>z1bjSSWoL8</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\Mouadh\Desktop\pfe\finalPFE\finalPFE\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/Mouadh/Documents/GitHub/finalPFE/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -7567,7 +7947,7 @@
     <service id="Symfony\WebpackEncoreBundle\Asset\EntrypointLookupInterface" alias="webpack_encore.entrypoint_lookup[_default]"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.gSv9zYw" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.zxMugcL"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.qAb9aXo"/>
     <service id="session" alias=".session.do-not-use" public="true">
       <deprecated package="symfony/framework-bundle" version="5.3">The "%alias_id%" service and "SessionInterface" alias are deprecated, use "$requestStack-&gt;getSession()" instead.</deprecated>
     </service>
@@ -7587,11 +7967,12 @@
     <service id="Psr\Log\LoggerInterface $securityLogger" alias="monolog.logger.security"/>
     <service id="Psr\Log\LoggerInterface $deprecationLogger" alias="monolog.logger.deprecation"/>
     <service id="doctrine.id_generator_locator" alias=".service_locator.KLVvNIq"/>
-    <service id=".service_locator.XDGmiR3" alias=".1_ServiceLocator~WXMXu8P"/>
+    <service id=".service_locator.XDGmiR3" alias=".1_ServiceLocator~k4_MZnA"/>
     <service id=".service_locator.0GV1BZZ" alias=".service_locator.gSv9zYw"/>
-    <service id=".service_locator.YxNo8ZP" alias=".service_locator.zxMugcL"/>
+    <service id=".service_locator.YIjRGHA" alias=".service_locator.B3Rkt.q"/>
+    <service id=".service_locator.ZSOWrBX" alias=".service_locator.qAb9aXo"/>
     <service id=".service_locator.wKF4yn1" alias=".service_locator.19_mNxd"/>
-    <service id=".service_locator.Za9MpXe" alias=".service_locator.y4dplYt"/>
+    <service id=".service_locator.8RDJwvp" alias=".service_locator.xF5aK_N"/>
     <service id=".service_locator.4hi2aOY" alias=".service_locator.bBRwv06"/>
     <service id=".service_locator.O24_MAy" alias=".service_locator.yY.p4P7"/>
     <service id=".service_locator.W9y3dzm" alias=".service_locator.GNc8e5B"/>
@@ -7617,6 +7998,23 @@
     <service id="doctrine.orm.default_metadata_driver" alias=".doctrine.orm.default_metadata_driver"/>
     <service id=".service_locator._5g_Wvc" alias=".service_locator.KfwZsne"/>
     <service id=".service_locator.JBAFp66" alias=".service_locator.KfbR3DY"/>
+    <service id=".service_locator.OW4pDCF" alias=".service_locator.jFcPcms"/>
+    <service id=".service_locator.hN.eLzj" alias=".service_locator.wPLyNuL"/>
+    <service id=".service_locator.D5ud2A7" alias=".service_locator.Z24SyeC"/>
+    <service id=".service_locator.p1BVA_m" alias=".service_locator.6198kO2"/>
+    <service id=".service_locator.A8qGIeX" alias=".service_locator.jlYZBDk"/>
+    <service id=".service_locator.ppoqzVe" alias=".service_locator.IZlzbt7"/>
+    <service id=".service_locator.fHcmKIt" alias=".service_locator.ClFhw5X"/>
+    <service id=".service_locator.YaF8XJS" alias=".service_locator.0gg6_jH"/>
+    <service id=".service_locator.iHhnBmb" alias=".service_locator.zAmOOyF"/>
+    <service id=".service_locator.OUdDkM8" alias=".service_locator.B3Rkt.q"/>
+    <service id=".service_locator.kXCVHeG" alias=".service_locator.UDgw6Ol"/>
+    <service id=".service_locator.ACOB_3X" alias=".service_locator.OSbocZ8"/>
+    <service id=".service_locator.km268i_" alias=".service_locator.TfvLzuL"/>
+    <service id=".service_locator.HgK2zvG" alias=".service_locator.gfSrDu1"/>
+    <service id=".service_locator.8PQa8Mp" alias=".service_locator..Ae5NXw"/>
+    <service id=".service_locator.NFoOWn0" alias=".service_locator.ch4Jgvl"/>
+    <service id=".service_locator.IyTIsd6" alias=".service_locator.4MF6DUv"/>
     <service id=".service_locator.NK827YO" alias=".service_locator.GNc8e5B"/>
     <service id=".service_locator.L0rFhJm" alias=".service_locator.GVyCdgr"/>
     <service id=".service_locator.9YCWxeJ" alias=".service_locator.dw8O4oN"/>

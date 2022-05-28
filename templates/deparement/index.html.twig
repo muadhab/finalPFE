@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Deparement index{% endblock %}
+
+{% block body %}
+    <h1>Deparement index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name_dept</th>
+                <th>Email_dept</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for deparement in deparements %}
+            <tr>
+                <td>{{ deparement.id }}</td>
+                <td>{{ deparement.nameDept }}</td>
+                <td>{{ deparement.emailDept }}</td>
+                <td>
+                    <a href="{{ path('app_deparement_show', {'id': deparement.id}) }}">show</a>
+                    <a href="{{ path('app_deparement_edit', {'id': deparement.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_deparement_new') }}">Create new</a>
+{% endblock %}

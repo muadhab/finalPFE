@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Incident{% endblock %}
+
+{% block body %}
+    <h1>Incident</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ incident.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom_incident</th>
+                <td>{{ incident.nomIncident }}</td>
+            </tr>
+            <tr>
+                <th>Desc_incident</th>
+                <td>{{ incident.descIncident }}</td>
+            </tr>
+            <tr>
+                <th>Urgence_incident</th>
+                <td>{{ incident.urgenceIncident }}</td>
+            </tr>
+            <tr>
+                <th>Status_incident</th>
+                <td>{{ incident.statusIncident }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_incident_index') }}">back to list</a>
+
+    <a href="{{ path('app_incident_edit', {'id': incident.id}) }}">edit</a>
+
+    {{ include('incident/_delete_form.html.twig') }}
+{% endblock %}

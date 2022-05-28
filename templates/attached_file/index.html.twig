@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}AttachedFile index{% endblock %}
+
+{% block body %}
+    <h1>AttachedFile index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Oraversion</th>
+                <th>Orahome</th>
+                <th>Orabase</th>
+                <th>Orasid</th>
+                <th>Ora_score</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for attached_file in attached_files %}
+            <tr>
+                <td>{{ attached_file.id }}</td>
+                <td>{{ attached_file.oraversion }}</td>
+                <td>{{ attached_file.orahome }}</td>
+                <td>{{ attached_file.orabase }}</td>
+                <td>{{ attached_file.orasid }}</td>
+                <td>{{ attached_file.oraScore }}</td>
+                <td>
+                    <a href="{{ path('app_attached_file_show', {'id': attached_file.id}) }}">show</a>
+                    <a href="{{ path('app_attached_file_edit', {'id': attached_file.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="7">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_attached_file_new') }}">Create new</a>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Incident{% endblock %}
+
+{% block body %}
+    <h1>Create new Incident</h1>
+
+    {{ include('incident/_form.html.twig') }}
+
+    <a href="{{ path('app_incident_index') }}">back to list</a>
+{% endblock %}
