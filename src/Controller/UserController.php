@@ -28,6 +28,7 @@ class UserController extends AbstractController
     /**
      * @Route("/new", name="app_user_new", methods={"GET", "POST"})
      */
+
     public function new(Request $request, UserRepository $userRepository): Response
     {
         $user = new User();
@@ -87,4 +88,5 @@ class UserController extends AbstractController
 
         return $this->redirectToRoute('app_user_index', [], Response::HTTP_SEE_OTHER);
     }
+      
 }

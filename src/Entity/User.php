@@ -62,9 +62,8 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
     /**
      * @ORM\ManyToOne(targetEntity=Deparement::class, inversedBy="users")
-     * @ORM\JoinColumn(nullable=false)
      */
-    private $departement;
+    // private $departement;
 
     /**
      * @ORM\OneToMany(targetEntity=Task::class, mappedBy="task_owner")
@@ -208,17 +207,17 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return $this;
     }
 
-    public function getDepartement(): ?Deparement
-    {
-        return $this->departement;
-    }
+    // public function getDepartement(): ?Deparement
+    // {
+    //     return  $this->departement;
+    // }
 
-    public function setDepartement(?Deparement $departement): self
-    {
-        $this->departement = $departement;
+    // public function setDepartement(?Deparement $departement): self
+    // {
+    //     $this->departement = $departement;
 
-        return $this;
-    }
+    //     return $this;
+    // }
 
     /**
      * @return Collection<int, Task>
@@ -249,4 +248,6 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
         return $this;
     }
+
+    
 }
