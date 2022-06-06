@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit OracleTester{% endblock %}
+
+{% block body %}
+    <h1>Edit OracleTester</h1>
+
+    {{ include('oracle_tester/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_oracle_tester_index') }}">back to list</a>
+
+    {{ include('oracle_tester/_delete_form.html.twig') }}
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}OracleTester index{% endblock %}
+
+{% block body %}
+    <h1>OracleTester index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Oraversion</th>
+                <th>Orahome</th>
+                <th>Orabase</th>
+                <th>Orasid</th>
+                <th>Ora_score</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for oracle_tester in oracle_testers %}
+            <tr>
+                <td>{{ oracle_tester.id }}</td>
+                <td>{{ oracle_tester.Oraversion }}</td>
+                <td>{{ oracle_tester.Orahome }}</td>
+                <td>{{ oracle_tester.Orabase }}</td>
+                <td>{{ oracle_tester.Orasid }}</td>
+                <td>{{ oracle_tester.OraScore }}</td>
+                <td>
+                    <a href="{{ path('app_oracle_tester_show', {'id': oracle_tester.id}) }}">show</a>
+                    <a href="{{ path('app_oracle_tester_edit', {'id': oracle_tester.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="7">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_oracle_tester_new') }}">Create new</a>
+{% endblock %}

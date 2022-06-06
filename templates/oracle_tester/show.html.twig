@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}OracleTester{% endblock %}
+
+{% block body %}
+    <h1>OracleTester</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ oracle_tester.id }}</td>
+            </tr>
+            <tr>
+                <th>Oraversion</th>
+                <td>{{ oracle_tester.Oraversion }}</td>
+            </tr>
+            <tr>
+                <th>Orahome</th>
+                <td>{{ oracle_tester.Orahome }}</td>
+            </tr>
+            <tr>
+                <th>Orabase</th>
+                <td>{{ oracle_tester.Orabase }}</td>
+            </tr>
+            <tr>
+                <th>Orasid</th>
+                <td>{{ oracle_tester.Orasid }}</td>
+            </tr>
+            <tr>
+                <th>Ora_score</th>
+                <td>{{ oracle_tester.OraScore }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_oracle_tester_index') }}">back to list</a>
+
+    <a href="{{ path('app_oracle_tester_edit', {'id': oracle_tester.id}) }}">edit</a>
+
+    {{ include('oracle_tester/_delete_form.html.twig') }}
+{% endblock %}

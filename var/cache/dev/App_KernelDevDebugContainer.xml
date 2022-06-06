@@ -365,6 +365,13 @@
         <argument type="service" id=".service_locator.GNc8e5B.App\Controller\IncidentController"/>
       </call>
     </service>
+    <service id="App\Controller\OracleTesterController" class="App\Controller\OracleTesterController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.GNc8e5B.App\Controller\OracleTesterController"/>
+      </call>
+    </service>
     <service id="App\Controller\RegistrationController" class="App\Controller\RegistrationController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
       <tag name="container.service_subscriber"/>
@@ -402,6 +409,9 @@
     <service id="App\Form\IncidentType" class="App\Form\IncidentType" autowire="true" autoconfigure="true">
       <tag name="form.type"/>
     </service>
+    <service id="App\Form\OracleTesterType" class="App\Form\OracleTesterType" autowire="true" autoconfigure="true">
+      <tag name="form.type"/>
+    </service>
     <service id="App\Form\RegistrationFormType" class="App\Form\RegistrationFormType" autowire="true" autoconfigure="true">
       <tag name="form.type"/>
     </service>
@@ -420,6 +430,10 @@
       <argument type="service" id="doctrine"/>
     </service>
     <service id="App\Repository\IncidentRepository" class="App\Repository\IncidentRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id="App\Repository\OracleTesterRepository" class="App\Repository\OracleTesterRepository" autowire="true" autoconfigure="true">
       <tag name="doctrine.repository_service"/>
       <argument type="service" id="doctrine"/>
     </service>
@@ -1092,6 +1106,7 @@
         <argument>App\Form\AttachedFileType</argument>
         <argument>App\Form\DeparementType</argument>
         <argument>App\Form\IncidentType</argument>
+        <argument>App\Form\OracleTesterType</argument>
         <argument>App\Form\RegistrationFormType</argument>
         <argument>App\Form\TaskType</argument>
         <argument>App\Form\UserType</argument>
@@ -3174,7 +3189,7 @@
       <argument type="service" id="form.registry"/>
     </service>
     <service id="form.extension" class="Symfony\Component\Form\Extension\DependencyInjection\DependencyInjectionExtension">
-      <argument type="service" id=".service_locator.xF5aK_N"/>
+      <argument type="service" id=".service_locator.k6YgPHI"/>
       <argument type="collection">
         <argument key="Symfony\Component\Form\Extension\Core\Type\FormType" type="iterator">
           <argument type="service" id="form.type_extension.form.transformation_failure_handling"/>
@@ -4659,7 +4674,7 @@
       <factory class="Doctrine\ORM\EntityManager" method="create"/>
     </service>
     <service id="doctrine.orm.container_repository_factory" class="Doctrine\Bundle\DoctrineBundle\Repository\ContainerRepositoryFactory">
-      <argument type="service" id=".service_locator.94wQiHa"/>
+      <argument type="service" id=".service_locator.gwxt8Qp"/>
     </service>
     <service id="doctrine.orm.manager_configurator.abstract" class="Doctrine\Bundle\DoctrineBundle\ManagerConfigurator" abstract="true">
       <argument type="collection"/>
@@ -5936,6 +5951,9 @@
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\IncidentController" class="App\Controller\IncidentController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\IncidentController" class="App\Controller\IncidentController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\IncidentController" class="App\Controller\IncidentController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\OracleTesterController" class="App\Controller\OracleTesterController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\OracleTesterController" class="App\Controller\OracleTesterController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\OracleTesterController" class="App\Controller\OracleTesterController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\RegistrationController" class="App\Controller\RegistrationController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\RegistrationController" class="App\Controller\RegistrationController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\RegistrationController" class="App\Controller\RegistrationController" autowire="true" autoconfigure="true" abstract="true"/>
@@ -5954,6 +5972,8 @@
     <service id=".abstract.instanceof.App\Form\DeparementType" class="App\Form\DeparementType" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\IncidentType" class="App\Form\IncidentType" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Form\IncidentType" class="App\Form\IncidentType" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\OracleTesterType" class="App\Form\OracleTesterType" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Form\OracleTesterType" class="App\Form\OracleTesterType" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\RegistrationFormType" class="App\Form\RegistrationFormType" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Form\RegistrationFormType" class="App\Form\RegistrationFormType" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\TaskType" class="App\Form\TaskType" autowire="true" abstract="true"/>
@@ -5966,6 +5986,8 @@
     <service id=".abstract.instanceof.App\Repository\DeparementRepository" class="App\Repository\DeparementRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\IncidentRepository" class="App\Repository\IncidentRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\IncidentRepository" class="App\Repository\IncidentRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\OracleTesterRepository" class="App\Repository\OracleTesterRepository" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\OracleTesterRepository" class="App\Repository\OracleTesterRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\TaskRepository" class="App\Repository\TaskRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\TaskRepository" class="App\Repository\TaskRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\UserRepository" class="App\Repository\UserRepository" autowire="true" abstract="true"/>
@@ -6355,6 +6377,25 @@
         <argument key="incidentRepository" type="service_closure" id="App\Repository\IncidentRepository"/>
       </argument>
     </service>
+    <service id=".service_locator.uJMHewH" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="oracleTesterRepository" type="service_closure" id="App\Repository\OracleTesterRepository"/>
+      </argument>
+    </service>
+    <service id=".service_locator.Ufh0_cA" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="oracleTester" type="service_closure" id=".errored..service_locator.Ufh0_cA.App\Entity\OracleTester"/>
+      </argument>
+    </service>
+    <service id=".service_locator.4xqZBdp" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="oracleTester" type="service_closure" id=".errored..service_locator.4xqZBdp.App\Entity\OracleTester"/>
+        <argument key="oracleTesterRepository" type="service_closure" id="App\Repository\OracleTesterRepository"/>
+      </argument>
+    </service>
     <service id=".service_locator.B3Rkt.q" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
@@ -6408,7 +6449,7 @@
         <argument key="userRepository" type="service_closure" id="App\Repository\UserRepository"/>
       </argument>
     </service>
-    <service id=".service_locator.qAb9aXo" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.NNO6Nj." class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\AttachedFileController::delete" type="service_closure" id=".service_locator.Z24SyeC"/>
@@ -6426,6 +6467,11 @@
         <argument key="App\Controller\IncidentController::index" type="service_closure" id=".service_locator.ClFhw5X"/>
         <argument key="App\Controller\IncidentController::new" type="service_closure" id=".service_locator.ClFhw5X"/>
         <argument key="App\Controller\IncidentController::show" type="service_closure" id=".service_locator.0gg6_jH"/>
+        <argument key="App\Controller\OracleTesterController::delete" type="service_closure" id=".service_locator.4xqZBdp"/>
+        <argument key="App\Controller\OracleTesterController::edit" type="service_closure" id=".service_locator.4xqZBdp"/>
+        <argument key="App\Controller\OracleTesterController::index" type="service_closure" id=".service_locator.uJMHewH"/>
+        <argument key="App\Controller\OracleTesterController::new" type="service_closure" id=".service_locator.uJMHewH"/>
+        <argument key="App\Controller\OracleTesterController::show" type="service_closure" id=".service_locator.Ufh0_cA"/>
         <argument key="App\Controller\RegistrationController::register" type="service_closure" id=".service_locator.B3Rkt.q"/>
         <argument key="App\Controller\SecurityController::login" type="service_closure" id=".service_locator.UDgw6Ol"/>
         <argument key="App\Controller\TaskController::delete" type="service_closure" id=".service_locator.gfSrDu1"/>
@@ -6459,6 +6505,11 @@
         <argument key="App\Controller\IncidentController:index" type="service_closure" id=".service_locator.ClFhw5X"/>
         <argument key="App\Controller\IncidentController:new" type="service_closure" id=".service_locator.ClFhw5X"/>
         <argument key="App\Controller\IncidentController:show" type="service_closure" id=".service_locator.0gg6_jH"/>
+        <argument key="App\Controller\OracleTesterController:delete" type="service_closure" id=".service_locator.4xqZBdp"/>
+        <argument key="App\Controller\OracleTesterController:edit" type="service_closure" id=".service_locator.4xqZBdp"/>
+        <argument key="App\Controller\OracleTesterController:index" type="service_closure" id=".service_locator.uJMHewH"/>
+        <argument key="App\Controller\OracleTesterController:new" type="service_closure" id=".service_locator.uJMHewH"/>
+        <argument key="App\Controller\OracleTesterController:show" type="service_closure" id=".service_locator.Ufh0_cA"/>
         <argument key="App\Controller\RegistrationController:register" type="service_closure" id=".service_locator.B3Rkt.q"/>
         <argument key="App\Controller\SecurityController:login" type="service_closure" id=".service_locator.UDgw6Ol"/>
         <argument key="App\Controller\TaskController:delete" type="service_closure" id=".service_locator.gfSrDu1"/>
@@ -6535,12 +6586,13 @@
       <argument type="service" id="debug.argument_resolver.not_tagged_controller.inner"/>
       <argument type="service" id="debug.stopwatch"/>
     </service>
-    <service id=".service_locator.xF5aK_N" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.k6YgPHI" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Form\AttachedFileType" type="service_closure" id="App\Form\AttachedFileType"/>
         <argument key="App\Form\DeparementType" type="service_closure" id="App\Form\DeparementType"/>
         <argument key="App\Form\IncidentType" type="service_closure" id="App\Form\IncidentType"/>
+        <argument key="App\Form\OracleTesterType" type="service_closure" id="App\Form\OracleTesterType"/>
         <argument key="App\Form\RegistrationFormType" type="service_closure" id="App\Form\RegistrationFormType"/>
         <argument key="App\Form\TaskType" type="service_closure" id="App\Form\TaskType"/>
         <argument key="App\Form\UserType" type="service_closure" id="App\Form\UserType"/>
@@ -6741,12 +6793,13 @@
         <argument key="doctrine.orm.listeners.pdo_cache_adapter_doctrine_schema_subscriber" type="service_closure" id="doctrine.orm.listeners.pdo_cache_adapter_doctrine_schema_subscriber"/>
       </argument>
     </service>
-    <service id=".service_locator.94wQiHa" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.gwxt8Qp" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Repository\AttachedFileRepository" type="service_closure" id="App\Repository\AttachedFileRepository"/>
         <argument key="App\Repository\DeparementRepository" type="service_closure" id="App\Repository\DeparementRepository"/>
         <argument key="App\Repository\IncidentRepository" type="service_closure" id="App\Repository\IncidentRepository"/>
+        <argument key="App\Repository\OracleTesterRepository" type="service_closure" id="App\Repository\OracleTesterRepository"/>
         <argument key="App\Repository\TaskRepository" type="service_closure" id="App\Repository\TaskRepository"/>
         <argument key="App\Repository\UserRepository" type="service_closure" id="App\Repository\UserRepository"/>
       </argument>
@@ -6842,6 +6895,12 @@
     <service id=".service_locator.GNc8e5B.App\Controller\IncidentController" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator_context" id="App\Controller\IncidentController"/>
       <argument>App\Controller\IncidentController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.GNc8e5B" method="withContext"/>
+    </service>
+    <service id=".service_locator.GNc8e5B.App\Controller\OracleTesterController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\OracleTesterController"/>
+      <argument>App\Controller\OracleTesterController</argument>
       <argument type="service" id="service_container"/>
       <factory service=".service_locator.GNc8e5B" method="withContext"/>
     </service>
@@ -7043,12 +7102,12 @@
       <argument type="service" id="security.token_storage"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">
-      <argument type="service" id=".service_locator.qAb9aXo"/>
+      <argument type="service" id=".service_locator.NNO6Nj."/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver">
-      <argument type="service" id=".service_locator.qAb9aXo"/>
+      <argument type="service" id=".service_locator.NNO6Nj."/>
     </service>
     <service id=".debug.http_client.inner" class="Symfony\Contracts\HttpClient\HttpClientInterface">
       <argument type="collection"/>
@@ -7072,6 +7131,8 @@
     <service id=".errored..service_locator.IZlzbt7.App\Entity\Deparement" class="App\Entity\Deparement"/>
     <service id=".errored..service_locator.0gg6_jH.App\Entity\Incident" class="App\Entity\Incident"/>
     <service id=".errored..service_locator.zAmOOyF.App\Entity\Incident" class="App\Entity\Incident"/>
+    <service id=".errored..service_locator.Ufh0_cA.App\Entity\OracleTester" class="App\Entity\OracleTester"/>
+    <service id=".errored..service_locator.4xqZBdp.App\Entity\OracleTester" class="App\Entity\OracleTester"/>
     <service id=".errored..service_locator.TfvLzuL.App\Entity\Task" class="App\Entity\Task"/>
     <service id=".errored..service_locator.gfSrDu1.App\Entity\Task" class="App\Entity\Task"/>
     <service id=".errored..service_locator.ch4Jgvl.App\Entity\User" class="App\Entity\User"/>
@@ -7947,7 +8008,7 @@
     <service id="Symfony\WebpackEncoreBundle\Asset\EntrypointLookupInterface" alias="webpack_encore.entrypoint_lookup[_default]"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.gSv9zYw" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.qAb9aXo"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.NNO6Nj."/>
     <service id="session" alias=".session.do-not-use" public="true">
       <deprecated package="symfony/framework-bundle" version="5.3">The "%alias_id%" service and "SessionInterface" alias are deprecated, use "$requestStack-&gt;getSession()" instead.</deprecated>
     </service>
@@ -7970,9 +8031,9 @@
     <service id=".service_locator.XDGmiR3" alias=".1_ServiceLocator~k4_MZnA"/>
     <service id=".service_locator.0GV1BZZ" alias=".service_locator.gSv9zYw"/>
     <service id=".service_locator.YIjRGHA" alias=".service_locator.B3Rkt.q"/>
-    <service id=".service_locator.ZSOWrBX" alias=".service_locator.qAb9aXo"/>
+    <service id=".service_locator.WmCSqmv" alias=".service_locator.NNO6Nj."/>
     <service id=".service_locator.wKF4yn1" alias=".service_locator.19_mNxd"/>
-    <service id=".service_locator.8RDJwvp" alias=".service_locator.xF5aK_N"/>
+    <service id=".service_locator.ekWBIGX" alias=".service_locator.k6YgPHI"/>
     <service id=".service_locator.4hi2aOY" alias=".service_locator.bBRwv06"/>
     <service id=".service_locator.O24_MAy" alias=".service_locator.yY.p4P7"/>
     <service id=".service_locator.W9y3dzm" alias=".service_locator.GNc8e5B"/>
@@ -8007,6 +8068,9 @@
     <service id=".service_locator.fHcmKIt" alias=".service_locator.ClFhw5X"/>
     <service id=".service_locator.YaF8XJS" alias=".service_locator.0gg6_jH"/>
     <service id=".service_locator.iHhnBmb" alias=".service_locator.zAmOOyF"/>
+    <service id=".service_locator.z5Y_Xmq" alias=".service_locator.uJMHewH"/>
+    <service id=".service_locator.L3iYV41" alias=".service_locator.Ufh0_cA"/>
+    <service id=".service_locator.om_ON1u" alias=".service_locator.4xqZBdp"/>
     <service id=".service_locator.OUdDkM8" alias=".service_locator.B3Rkt.q"/>
     <service id=".service_locator.kXCVHeG" alias=".service_locator.UDgw6Ol"/>
     <service id=".service_locator.ACOB_3X" alias=".service_locator.OSbocZ8"/>

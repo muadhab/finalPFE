@@ -136,6 +136,11 @@ class ComposerStaticInit0fb42d5c74139b1cdd5cad60bf952017
             'Laminas\\EventManager\\' => 21,
             'Laminas\\Code\\' => 13,
         ),
+        'K' => 
+        array (
+            'Knp\\Snappy\\' => 11,
+            'Knp\\Bundle\\SnappyBundle\\' => 24,
+        ),
         'E' => 
         array (
             'Egulias\\EmailValidator\\' => 23,
@@ -520,6 +525,14 @@ class ComposerStaticInit0fb42d5c74139b1cdd5cad60bf952017
         'Laminas\\Code\\' => 
         array (
             0 => __DIR__ . '/..' . '/laminas/laminas-code/src',
+        ),
+        'Knp\\Snappy\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/knplabs/knp-snappy/src/Knp/Snappy',
+        ),
+        'Knp\\Bundle\\SnappyBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/knplabs/knp-snappy-bundle/src',
         ),
         'Egulias\\EmailValidator\\' => 
         array (
@@ -1847,6 +1860,19 @@ class ComposerStaticInit0fb42d5c74139b1cdd5cad60bf952017
         'Egulias\\EmailValidator\\Warning\\Warning' => __DIR__ . '/..' . '/egulias/email-validator/src/Warning/Warning.php',
         'IntlDateFormatter' => __DIR__ . '/..' . '/symfony/intl/Resources/stubs/IntlDateFormatter.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
+        'Knp\\Bundle\\SnappyBundle\\DependencyInjection\\Configuration' => __DIR__ . '/..' . '/knplabs/knp-snappy-bundle/src/DependencyInjection/Configuration.php',
+        'Knp\\Bundle\\SnappyBundle\\DependencyInjection\\KnpSnappyExtension' => __DIR__ . '/..' . '/knplabs/knp-snappy-bundle/src/DependencyInjection/KnpSnappyExtension.php',
+        'Knp\\Bundle\\SnappyBundle\\KnpSnappyBundle' => __DIR__ . '/..' . '/knplabs/knp-snappy-bundle/src/KnpSnappyBundle.php',
+        'Knp\\Bundle\\SnappyBundle\\Snappy\\Generator\\LoggableGenerator' => __DIR__ . '/..' . '/knplabs/knp-snappy-bundle/src/Snappy/Generator/LoggableGenerator.php',
+        'Knp\\Bundle\\SnappyBundle\\Snappy\\LoggableGenerator' => __DIR__ . '/..' . '/knplabs/knp-snappy-bundle/src/Snappy/LoggableGenerator.php',
+        'Knp\\Bundle\\SnappyBundle\\Snappy\\Response\\JpegResponse' => __DIR__ . '/..' . '/knplabs/knp-snappy-bundle/src/Snappy/Response/JpegResponse.php',
+        'Knp\\Bundle\\SnappyBundle\\Snappy\\Response\\PdfResponse' => __DIR__ . '/..' . '/knplabs/knp-snappy-bundle/src/Snappy/Response/PdfResponse.php',
+        'Knp\\Bundle\\SnappyBundle\\Snappy\\Response\\SnappyResponse' => __DIR__ . '/..' . '/knplabs/knp-snappy-bundle/src/Snappy/Response/SnappyResponse.php',
+        'Knp\\Snappy\\AbstractGenerator' => __DIR__ . '/..' . '/knplabs/knp-snappy/src/Knp/Snappy/AbstractGenerator.php',
+        'Knp\\Snappy\\Exception\\FileAlreadyExistsException' => __DIR__ . '/..' . '/knplabs/knp-snappy/src/Knp/Snappy/Exception/FileAlreadyExistsException.php',
+        'Knp\\Snappy\\GeneratorInterface' => __DIR__ . '/..' . '/knplabs/knp-snappy/src/Knp/Snappy/GeneratorInterface.php',
+        'Knp\\Snappy\\Image' => __DIR__ . '/..' . '/knplabs/knp-snappy/src/Knp/Snappy/Image.php',
+        'Knp\\Snappy\\Pdf' => __DIR__ . '/..' . '/knplabs/knp-snappy/src/Knp/Snappy/Pdf.php',
         'Laminas\\Code\\Annotation\\AnnotationCollection' => __DIR__ . '/..' . '/laminas/laminas-code/src/Annotation/AnnotationCollection.php',
         'Laminas\\Code\\Annotation\\AnnotationInterface' => __DIR__ . '/..' . '/laminas/laminas-code/src/Annotation/AnnotationInterface.php',
         'Laminas\\Code\\Annotation\\AnnotationManager' => __DIR__ . '/..' . '/laminas/laminas-code/src/Annotation/AnnotationManager.php',

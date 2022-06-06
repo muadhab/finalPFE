@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New OracleTester{% endblock %}
+
+{% block body %}
+    <h1>Create new OracleTester</h1>
+    <p>WELCOME TO THE ORACLE TESTING AND VALIDATION TOOL </p> 
+    <P>best practice : please make sure that you fill all the feilds to mantain better integration calculation, result will be sent to your email </p>
+    {{ include('oracle_tester/_form.html.twig') }}
+
+    <a href="{{ path('app_oracle_tester_index') }}">back to list</a>
+{% endblock %}
