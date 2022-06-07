@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Upload index{% endblock %}
+
+{% block body %}
+    <h1>Upload index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>File1</th>
+                <th>File2</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for upload in uploads %}
+            <tr>
+                <td>{{ upload.id }}</td>
+                <td>{{ upload.file1 }}</td>
+                <td>{{ upload.file2 }}</td>
+                <td>
+                    <a href="{{ path('app_upload_show', {'id': upload.id}) }}">show</a>
+                    <a href="{{ path('app_upload_edit', {'id': upload.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_upload_new') }}">Create new</a>
+{% endblock %}

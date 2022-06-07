@@ -1,20 +1,32 @@
-{% extends 'base.html.twig' %}
 
-{% block title %}Hello CompareController!{% endblock %}
-
-{% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/Users/Mouadh/Documents/GitHub/finalPFE/src/Controller/CompareController.php'|file_link(0) }}">src/Controller/CompareController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/Users/Mouadh/Documents/GitHub/finalPFE/templates/compare/index.html.twig'|file_link(0) }}">templates/compare/index.html.twig</a></code></li>
-    </ul>
-</div>
-{% endblock %}
+  <table align="center" width="800" border="1" style="border-collapse:collapse; border:1px solid #ddd;" cellpadding="5" cellspacing="0">
+    <thead>
+        <tr bgcolor="#FFCC00">
+            <th>Sr#</th>
+            <th>Country Code</th>
+            <th>Country Name</th>
+            <th>Capital</th>
+        </tr>
+    </thead>
+    <tbody>
+    <?php
+    if (($handle    =   fopen("you-file-name.csv", "r")) !== FALSE) {
+        $n          =   1;
+        while (($row    =   fgetcsv($handle)) !== FALSE){
+            if($n>1){
+                ?>
+                <tr>
+                    <td><?php echo $n;?></td>
+                    <td><?php echo $row[0];?></td>
+                    <td><?php echo $row[1];?></td>
+                    <td><?php echo $row[2];?></td>
+                </tr>
+                <?php
+            }
+            $n++;
+        }
+        fclose($handle);
+    }
+    ?>
+    </tbody>
+</table>
