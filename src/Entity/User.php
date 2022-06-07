@@ -3,8 +3,6 @@
 namespace App\Entity;
 
 use App\Repository\UserRepository;
-use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
@@ -12,8 +10,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
- * @ORM\Table(name="`user`")
- * @UniqueEntity(fields={"username"}, message="There is already an account with this username")
+ * @UniqueEntity(fields={"email"}, message="There is already an account with this email")
  */
 class User implements UserInterface, PasswordAuthenticatedUserInterface
 {
@@ -27,7 +24,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     /**
      * @ORM\Column(type="string", length=180, unique=true)
      */
-    private $username;
+    private $email;
 
     /**
      * @ORM\Column(type="json")
@@ -40,57 +37,19 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
      */
     private $password;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $nom_user;
-
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $prenom_user;
-
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $email;
-
-    /**
-     * @ORM\Column(type="integer")
-     */
-    private $num_tel;
-
-    /**
-     * @ORM\ManyToOne(targetEntity=Deparement::class, inversedBy="users")
-     */
-    // private $departement;
-
-    /**
-     * @ORM\OneToMany(targetEntity=Task::class, mappedBy="task_owner")
-     */
-    private $tasks;
-
-    public function __construct()
-    {
-        $this->tasks = new ArrayCollection();
-    }
-
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    /**
-     * @deprecated since Symfony 5.3, use getUserIdentifier instead
-     */
-    public function getUsername(): string
+    public function getEmail(): ?string
     {
-        return (string) $this->username;
+        return $this->email;
     }
 
-    public function setUsername(string $username): self
+    public function setEmail(string $email): self
     {
-        $this->username = $username;
+        $this->email = $email;
 
         return $this;
     }
@@ -102,7 +61,15 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
      */
     public function getUserIdentifier(): string
     {
-        return (string) $this->username;
+        return (string) $this->email;
+    }
+
+    /**
+     * @deprecated since Symfony 5.3, use getUserIdentifier instead
+     */
+    public function getUsername(): string
+    {
+        return (string) $this->email;
     }
 
     /**
@@ -158,96 +125,4 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         // If you store any temporary, sensitive data on the user, clear it here
         // $this->plainPassword = null;
     }
-
-    public function getNomUser(): ?string
-    {
-        return $this->nom_user;
-    }
-
-    public function setNomUser(string $nom_user): self
-    {
-        $this->nom_user = $nom_user;
-
-        return $this;
-    }
-
-    public function getPrenomUser(): ?string
-    {
-        return $this->prenom_user;
-    }
-
-    public function setPrenomUser(string $prenom_user): self
-    {
-        $this->prenom_user = $prenom_user;
-
-        return $this;
-    }
-
-    public function getEmail(): ?string
-    {
-        return $this->email;
-    }
-
-    public function setEmail(string $email): self
-    {
-        $this->email = $email;
-
-        return $this;
-    }
-
-    public function getNumTel(): ?int
-    {
-        return $this->num_tel;
-    }
-
-    public function setNumTel(int $num_tel): self
-    {
-        $this->num_tel = $num_tel;
-
-        return $this;
-    }
-
-    // public function getDepartement(): ?Deparement
-    // {
-    //     return  $this->departement;
-    // }
-
-    // public function setDepartement(?Deparement $departement): self
-    // {
-    //     $this->departement = $departement;
-
-    //     return $this;
-    // }
-
-    /**
-     * @return Collection<int, Task>
-     */
-    public function getTasks(): Collection
-    {
-        return $this->tasks;
-    }
-
-    public function addTask(Task $task): self
-    {
-        if (!$this->tasks->contains($task)) {
-            $this->tasks[] = $task;
-            $task->setTaskOwner($this);
-        }
-
-        return $this;
-    }
-
-    public function removeTask(Task $task): self
-    {
-        if ($this->tasks->removeElement($task)) {
-            // set the owning side to null (unless already changed)
-            if ($task->getTaskOwner() === $this) {
-                $task->setTaskOwner(null);
-            }
-        }
-
-        return $this;
-    }
-
-    
 }

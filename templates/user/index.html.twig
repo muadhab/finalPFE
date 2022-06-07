@@ -9,13 +9,9 @@
         <thead>
             <tr>
                 <th>Id</th>
-                <th>Username</th>
+                <th>Email</th>
                 <th>Roles</th>
                 <th>Password</th>
-                <th>Nom_user</th>
-                <th>Prenom_user</th>
-                <th>Email</th>
-                <th>Num_tel</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -23,13 +19,9 @@
         {% for user in users %}
             <tr>
                 <td>{{ user.id }}</td>
-                <td>{{ user.username }}</td>
+                <td>{{ user.email }}</td>
                 <td>{{ user.roles ? user.roles|json_encode : '' }}</td>
                 <td>{{ user.password }}</td>
-                <td>{{ user.nomUser }}</td>
-                <td>{{ user.prenomUser }}</td>
-                <td>{{ user.email }}</td>
-                <td>{{ user.numTel }}</td>
                 <td>
                     <a href="{{ path('app_user_show', {'id': user.id}) }}">show</a>
                     <a href="{{ path('app_user_edit', {'id': user.id}) }}">edit</a>
@@ -37,7 +29,7 @@
             </tr>
         {% else %}
             <tr>
-                <td colspan="9">no records found</td>
+                <td colspan="5">no records found</td>
             </tr>
         {% endfor %}
         </tbody>

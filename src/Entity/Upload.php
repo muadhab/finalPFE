@@ -18,12 +18,12 @@ class Upload
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=255, nullable=true)
+     * @ORM\Column(type="string", length=255)
      */
     private $file1;
 
     /**
-     * @ORM\Column(type="string", length=255, nullable=true)
+     * @ORM\Column(type="string", length=255)
      */
     private $file2;
 
@@ -37,7 +37,7 @@ class Upload
         return $this->file1;
     }
 
-    public function setFile1(?string $file1): self
+    public function setFile1(string $file1): self
     {
         $this->file1 = $file1;
 
@@ -49,7 +49,7 @@ class Upload
         return $this->file2;
     }
 
-    public function setFile2(?string $file2): self
+    public function setFile2(string $file2): self
     {
         $this->file2 = $file2;
 
