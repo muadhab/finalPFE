@@ -1,123 +1,87 @@
-<! DOCTYPE html>  
-<html>  
-<meta name="viewport" content="width=device-width, initial-scale=1">    
-<meta charset="UTF-8">    
-<title> How to Auto Calculate Price in JavaScript  </title>     
- </head>  
-<style>  
-body {  
- text-align: center;  
- background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));  
- }  
- h2 {  
- font-style: italic; font-family: "Playfair Display" ,"Bookman",serif;  
- color: #999;  
- letter-spacing:- 0.005em;   
-word-spacing: 1px;  
- font-size: 2.75em;  
-  font-weight: bold;  
-  }  
-  h4 {  
- font-style: italic;   
- font-family: "Playfair Display", "Bookman",serif;  
- color: black;   
-  letter-spacing:- 0.005em;   
-  word-spacing: 1px;  
- font-size: 1em;  
-  font-weight: bold;  
-  }  
- h1 {  
-  position: relative;  
-  padding: 0;  
-  margin: 0;  
-  font-family: "Raleway", sans-serif;  
-  font-weight: 300;  
-  font-size: 40px;  
-  color: #080808;  
-  -webkit-transition: all 0.4s ease 0s;  
-  -o-transition: all 0.4s ease 0s;  
-  transition: all 0.4s ease 0s;  
-  text-align: center;  
-}  
-.three h1 {  
-  font-size: 28px;  
-  font-weight: 500;  
-  letter-spacing: 0;  
-  line-height: 1.5em;  
-  padding-bottom: 15px;  
-  position: relative;  
-  text-align: center;  
-}  
-.three h1:before {  
-  content: "";  
-  position: absolute;  
-  left: 10;  
-  bottom: 0;  
-  height: 5px;  
-  width: 550px;  
-  background-color: #111;  
-  text-align: center;  
-}  
-.three h1:after {  
-  content: "";  
-  left: 0;  
-  bottom: 2px;  
-  height: 1px;  
-  width: 85%;  
-  max-width: 255px;  
-  background-color: #333;   
-}  
-</style>  
-<body>  
-<h2> Example </h2>  
- <h1> How to Auto Calculate Price in JavaScript </h1> <br> <br>  
-<fieldset>  
-<form action = "#" method = "post" name = "myform">  
+// PAGE 1 ! 
+
+<html>
+<head>
+<title>Calculatrice Simple</title>
+
+<script language="JavaScript">
+
+function verification(entree) {
+  var car ="1234567890[]()+-.*,/";
+  for (var i = 0; i < entree.length; i++)
+   if (car.indexOf(entree.charAt(i))<0 ) return false;
+  return true;
+ }
+
+ function calcul() {
+   var a = 0;
+  if (verification(window.document.calculatrice.result.value))
+     a = eval(window.document.calculatrice.result.value);
+   window.document.calculatrice.result.value = a;
+ }
+
+ function ajouter(caracteres) {
+   window.document.calculatrice.result.value =
+   window.document.calculatrice.result.value + caracteres;
+ }
+
+ function fonction_speciale(fonction) {
+   if (verification(window.document.calculatrice.result.value)) {
+     if(fonction == "sqrt") {
+       var a = 0;
+     a = eval(window.document.calculatrice.result.value);
+     window.document.calculatrice.result.value = Math.sqrt(a);
+   }
+   if(fonction == "pow") {
+     var a = 0;
+     a = eval(window.document.calculatrice.result.value);
+     window.document.calculatrice.result.value = a * a;
+   }
+   if(fonction == "log") {
+     var a = 0;
+     a = eval(window.document.calculatrice.result.value);
+     window.document.calculatrice.result.value = Math.log(a);
+   }
+  } else window.document.calculatrice.result.value = 25
+}
+
+</script>
+</head>
+<body>
+<table border bgcolor=#0001cc>
+<th>
+<form name="calculatrice">
+<center>
+<textarea style="WIDTH: 186px; HEIGHT: 24px; TEXT-ALIGN:right;" name="result1" align="right" class="affiche"></textarea>
+<textarea style="WIDTH: 186px; HEIGHT: 24px; TEXT-ALIGN:right;" name="result2" align="right" class="affiche"></textarea>
+<textarea style="WIDTH: 186px; HEIGHT: 24px; TEXT-ALIGN:right;" name="result" align="right" class="affiche"></textarea>
+<br>
+<input style="FONT-WEIGHT: bold; WIDTH: 44px; HEIGHT: 24px" type="button" name="b18" value="=" onClick="calcul()" size="30"><br>
 
 
-<input type="select">
-   <nom>oraversion</nom>
-   <libellé>version oracle?</libellé>
-   <option valeur="19c">19.3</option>
-   <option valeur="11g">11.2</option>
-   <option valeur="12c">12.2</option>
-</input>
+<!-- <input style="FONT-WEIGHT: bold; WIDTH: 44px; HEIGHT: 24px" type="button" name="b2" value="7" onClick="ajouter('7')" size="30">
+<input style="FONT-WEIGHT: bold; WIDTH: 44px; HEIGHT: 24px" type="button" name="b3" value="8" onClick="ajouter('8')" size="30">
+<input style="FONT-WEIGHT: bold; WIDTH: 44px; HEIGHT: 24px" type="button" name="b4" value="9" onClick="ajouter('9')" size="30">
+<input style="FONT-WEIGHT: bold; WIDTH: 44px; HEIGHT: 24px" type="button" name="b12" value=":" onClick="ajouter('/')" size="30"><br>
+<input style="FONT-WEIGHT: bold; WIDTH: 44px; HEIGHT: 24px" type="button" name="b5" value="4" onClick="ajouter('4')" size="30">
+<input style="FONT-WEIGHT: bold; WIDTH: 44px; HEIGHT: 24px" type="button" name="b6" value="5" onClick="ajouter('5')" size="30">
+<input style="FONT-WEIGHT: bold; WIDTH: 44px; HEIGHT: 24px" type="button" name="b7" value="6" onClick="ajouter('6')" size="30">
+<input style="FONT-WEIGHT: bold; WIDTH: 44px; HEIGHT: 24px" type="button" name="b11" value="x" onClick="ajouter('*')" size="30"><br>
+<input style="FONT-WEIGHT: bold; WIDTH: 44px; HEIGHT: 24px" type="button" name="b8" value="1" onClick="ajouter('1')" size="30">
+<input style="FONT-WEIGHT: bold; WIDTH: 44px; HEIGHT: 24px" type="button" name="b9" value="2" onClick="ajouter('2')" size="30">
+<input style="FONT-WEIGHT: bold; WIDTH: 44px; HEIGHT: 24px" type="button" name="b10" value="3" onClick="ajouter('3')" size="30">
+<input style="FONT-WEIGHT: bold; WIDTH: 44px; HEIGHT: 24px" type="button" name="b13" value="-" onClick="ajouter('-')" size="30"><br>
+<input style="FONT-WEIGHT: bold; WIDTH: 92px; HEIGHT: 24px" type="button" name="b14" value="0" onClick="ajouter('0')" size="30">
+<input style="FONT-WEIGHT: bold; WIDTH: 44px; HEIGHT: 24px" type="button" name="b15" value="." onClick="ajouter('.')" size="30">
+<input style="FONT-WEIGHT: bold; WIDTH: 44px; HEIGHT: 24px" type="button" name="b16" value="+" onClick="ajouter('+')" size="30"><br>
+<input style="FONT-WEIGHT: bold; WIDTH: 140px; HEIGHT: 24px" type="reset" name="b17" value="ON/C" size="30"> 
+<!-- <input style="FONT-WEIGHT: bold; WIDTH: 60px; HEIGHT: 24px" type="button"  class="button" value="sqrt " onClick="fonction_speciale('sqrt')">
+<input style="FONT-WEIGHT: bold; WIDTH: 60px; HEIGHT: 24px" type="button"  class="button" value=" pow " onClick="fonction_speciale('pow')">
+<input style="FONT-WEIGHT: bold; WIDTH: 60px; HEIGHT: 24px" type="button"  class="button" value=" log " onClick="fonction_speciale('log')"> -->
+</center>
+</form>
+</th>
+</table>
 
-<h4> Orahome</h4>  
-<input type = "text" name = "Orahome"> <br/>  
-
-<h4> Orabase </h4>  
-<input type = "text" name = "Orabase"> <br/>  
-
-<h4> Orasid </h4>  
-<input type = "text" name = "Orasid"> <br/>  
-
-<h4> Orascore</h4>  
-<input type = "text" name = "Orascore"> <br/>  
-
-
-<h4> Number of People </h4>  
-<input type = "text" name = "qty"> <br/>  
-    <h4> Enter Price </h4>    
- <input type="text" name="Cost" onkeyup="calculate(this.value)"> <br/>  
-  <h4> Total Price </h4> <input type="text" name="textbox5"/>  
-</fieldset>  
- </form>  
- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"> </script>  
-<script type = "text/javascript">  
-function calculate() {   
- if(isNaN(document.forms["myform"]["qty"].value) || document.forms["myform"]["qty"].value=="") {   
- var text1 = 0;   
- } else {   
- var text1 = parseInt(document.forms["myform"]["qty"].value);   
- }   
- if(isNaN(document.forms["myform"]["Cost"].value) || document.forms["myform"]["Cost"].value=="") {   
- var text2 = 0;   
- } else {   
- var text2 = parseFloat(document.forms["myform"]["Cost"].value);   
- }   
- document.forms["myform"]["textbox5"].value = (text1*text2);   
- }  
-</script>  
-</body>  
-</html>  
+</body>
+</html>

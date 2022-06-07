@@ -26,15 +26,15 @@ class OracleTesterController extends AbstractController
     }
 
 
-    // /**
-    //  * @Route("/x", name="app_oracle_tester_index", methods={"GET"})
-    //  */
-    // public function index2(OracleTesterRepository $oracleTesterRepository): Response
-    // {
-    //     return $this->render('oracle_tester/x.html', [
-    //         'oracle_testers' => $oracleTesterRepository->findAll(),
-    //     ]);
-    // }
+    /**
+     * @Route("/x", name="app_oracle_tester_index", methods={"GET"})
+     */
+    public function index2(OracleTesterRepository $oracleTesterRepository): Response
+    {
+        return $this->render('oracle_tester/x.html', [
+            'oracle_testers' => $oracleTesterRepository->findAll(),
+        ]);
+    }
     
 
     /**
