@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Comparer{% endblock %}
+
+{% block body %}
+
+
+    <h1>Create new Comparer</h1>
+
+    {{ include('comparer/_form.html.twig') }}
+
+    <a href="{{ path('app_comparer_index') }}">back to list</a>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Comparer index{% endblock %}
+
+{% block body %}
+    <h1>Comparer index</h1>
+<iframe src="http://localhost:3000/d-solo/TJEXXcu7k/new-dashboard?orgId=1&from=1609980252000&to=1622019602000&theme=light&panelId=36" width="450" height="200" frameborder="0"></iframe>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Filename1</th>
+                <th>Filename2</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for comparer in comparers %}
+            <tr>
+                <td>{{ comparer.id }}</td>
+                <td>{{ comparer.filename1 }}</td>
+                <td>{{ comparer.filename2 }}</td>
+                <td>
+                    <a href="{{ path('app_comparer_show', {'id': comparer.id}) }}">show</a>
+                    <a href="{{ path('app_comparer_edit', {'id': comparer.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_comparer_new') }}">Create new</a>
+{% endblock %}
