@@ -378,6 +378,22 @@
         <argument type="service" id=".service_locator.ipvtXDO.App\Controller\Admin\IncidentCrudController"/>
       </call>
     </service>
+    <service id="App\Controller\Admin\OracleTesterCrudController" class="App\Controller\Admin\OracleTesterCrudController" public="true" autowire="true" autoconfigure="true">
+      <tag name="ea.crud_controller"/>
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.ipvtXDO.App\Controller\Admin\OracleTesterCrudController"/>
+      </call>
+    </service>
+    <service id="App\Controller\Admin\TaskCrudController" class="App\Controller\Admin\TaskCrudController" public="true" autowire="true" autoconfigure="true">
+      <tag name="ea.crud_controller"/>
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.ipvtXDO.App\Controller\Admin\TaskCrudController"/>
+      </call>
+    </service>
     <service id="App\Controller\Admin\UploadCrudController" class="App\Controller\Admin\UploadCrudController" public="true" autowire="true" autoconfigure="true">
       <tag name="ea.crud_controller"/>
       <tag name="controller.service_arguments"/>
@@ -491,6 +507,9 @@
       <tag name="form.type"/>
     </service>
     <service id="App\Form\RegistrationFormType" class="App\Form\RegistrationFormType" autowire="true" autoconfigure="true">
+      <tag name="form.type"/>
+    </service>
+    <service id="App\Form\Task1Type" class="App\Form\Task1Type" autowire="true" autoconfigure="true">
       <tag name="form.type"/>
     </service>
     <service id="App\Form\TaskType" class="App\Form\TaskType" autowire="true" autoconfigure="true">
@@ -1204,6 +1223,7 @@
         <argument>App\Form\IncidentType</argument>
         <argument>App\Form\OracleTesterType</argument>
         <argument>App\Form\RegistrationFormType</argument>
+        <argument>App\Form\Task1Type</argument>
         <argument>App\Form\TaskType</argument>
         <argument>App\Form\UploadType</argument>
         <argument>App\Form\User1Type</argument>
@@ -3388,7 +3408,7 @@
       <argument type="service" id="form.registry"/>
     </service>
     <service id="form.extension" class="Symfony\Component\Form\Extension\DependencyInjection\DependencyInjectionExtension">
-      <argument type="service" id=".service_locator.Wprj6LZ"/>
+      <argument type="service" id=".service_locator.EhQ65gg"/>
       <argument type="collection">
         <argument key="Symfony\Component\Form\Extension\Core\Type\FormType" type="iterator">
           <argument type="service" id="form.type_extension.form.transformation_failure_handling"/>
@@ -6497,6 +6517,14 @@
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\Admin\IncidentCrudController" class="App\Controller\Admin\IncidentCrudController" autowire="true" abstract="true"/>
     <service id=".instanceof.EasyCorp\Bundle\EasyAdminBundle\Contracts\Controller\CrudControllerInterface.0.App\Controller\Admin\IncidentCrudController" class="App\Controller\Admin\IncidentCrudController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\Admin\IncidentCrudController" class="App\Controller\Admin\IncidentCrudController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\Admin\OracleTesterCrudController" class="App\Controller\Admin\OracleTesterCrudController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\Admin\OracleTesterCrudController" class="App\Controller\Admin\OracleTesterCrudController" autowire="true" abstract="true"/>
+    <service id=".instanceof.EasyCorp\Bundle\EasyAdminBundle\Contracts\Controller\CrudControllerInterface.0.App\Controller\Admin\OracleTesterCrudController" class="App\Controller\Admin\OracleTesterCrudController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\Admin\OracleTesterCrudController" class="App\Controller\Admin\OracleTesterCrudController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\Admin\TaskCrudController" class="App\Controller\Admin\TaskCrudController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\Admin\TaskCrudController" class="App\Controller\Admin\TaskCrudController" autowire="true" abstract="true"/>
+    <service id=".instanceof.EasyCorp\Bundle\EasyAdminBundle\Contracts\Controller\CrudControllerInterface.0.App\Controller\Admin\TaskCrudController" class="App\Controller\Admin\TaskCrudController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\Admin\TaskCrudController" class="App\Controller\Admin\TaskCrudController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\Admin\UploadCrudController" class="App\Controller\Admin\UploadCrudController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\Admin\UploadCrudController" class="App\Controller\Admin\UploadCrudController" autowire="true" abstract="true"/>
     <service id=".instanceof.EasyCorp\Bundle\EasyAdminBundle\Contracts\Controller\CrudControllerInterface.0.App\Controller\Admin\UploadCrudController" class="App\Controller\Admin\UploadCrudController" autowire="true" abstract="true"/>
@@ -6552,6 +6580,8 @@
     <service id=".abstract.instanceof.App\Form\OracleTesterType" class="App\Form\OracleTesterType" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\RegistrationFormType" class="App\Form\RegistrationFormType" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Form\RegistrationFormType" class="App\Form\RegistrationFormType" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\Task1Type" class="App\Form\Task1Type" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Form\Task1Type" class="App\Form\Task1Type" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\TaskType" class="App\Form\TaskType" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Form\TaskType" class="App\Form\TaskType" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\UploadType" class="App\Form\UploadType" autowire="true" abstract="true"/>
@@ -7124,25 +7154,6 @@
         <argument key="incidentRepository" type="service_closure" id="App\Repository\IncidentRepository"/>
       </argument>
     </service>
-    <service id=".service_locator.uJMHewH" class="Symfony\Component\DependencyInjection\ServiceLocator">
-      <tag name="container.service_locator"/>
-      <argument type="collection">
-        <argument key="oracleTesterRepository" type="service_closure" id="App\Repository\OracleTesterRepository"/>
-      </argument>
-    </service>
-    <service id=".service_locator.Ufh0_cA" class="Symfony\Component\DependencyInjection\ServiceLocator">
-      <tag name="container.service_locator"/>
-      <argument type="collection">
-        <argument key="oracleTester" type="service_closure" id=".errored..service_locator.Ufh0_cA.App\Entity\OracleTester"/>
-      </argument>
-    </service>
-    <service id=".service_locator.4xqZBdp" class="Symfony\Component\DependencyInjection\ServiceLocator">
-      <tag name="container.service_locator"/>
-      <argument type="collection">
-        <argument key="oracleTester" type="service_closure" id=".errored..service_locator.4xqZBdp.App\Entity\OracleTester"/>
-        <argument key="oracleTesterRepository" type="service_closure" id="App\Repository\OracleTesterRepository"/>
-      </argument>
-    </service>
     <service id=".service_locator.B3Rkt.q" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
@@ -7215,7 +7226,7 @@
         <argument key="userRepository" type="service_closure" id="App\Repository\UserRepository"/>
       </argument>
     </service>
-    <service id=".service_locator.4ttpril" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.Jwf2tBy" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\Admin\ComparerCrudController::autocomplete" type="service_closure" id=".service_locator.ZOQ9v2d"/>
@@ -7261,6 +7272,48 @@
         <argument key="App\Controller\Admin\IncidentCrudController::persistEntity" type="service_closure" id=".service_locator.l2QwsaZ"/>
         <argument key="App\Controller\Admin\IncidentCrudController::renderFilters" type="service_closure" id=".service_locator.ZOQ9v2d"/>
         <argument key="App\Controller\Admin\IncidentCrudController::updateEntity" type="service_closure" id=".service_locator.l2QwsaZ"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController::autocomplete" type="service_closure" id=".service_locator.ZOQ9v2d"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController::batchDelete" type="service_closure" id=".service_locator.Olybskb"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController::configureActions" type="service_closure" id=".service_locator.CKlWSja"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController::configureAssets" type="service_closure" id=".service_locator.U4Bbnsn"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController::configureCrud" type="service_closure" id=".service_locator.4C0Bh8j"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController::configureFilters" type="service_closure" id=".service_locator.Nt.ogDb"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController::configureResponseParameters" type="service_closure" id=".service_locator.2dc0eaX"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController::createEditForm" type="service_closure" id=".service_locator.bgO__Zr"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController::createEditFormBuilder" type="service_closure" id=".service_locator.bgO__Zr"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController::createIndexQueryBuilder" type="service_closure" id=".service_locator.3on9uHL"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController::createNewForm" type="service_closure" id=".service_locator.bgO__Zr"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController::createNewFormBuilder" type="service_closure" id=".service_locator.bgO__Zr"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController::delete" type="service_closure" id=".service_locator.ZOQ9v2d"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController::deleteEntity" type="service_closure" id=".service_locator.l2QwsaZ"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController::detail" type="service_closure" id=".service_locator.ZOQ9v2d"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController::edit" type="service_closure" id=".service_locator.ZOQ9v2d"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController::index" type="service_closure" id=".service_locator.ZOQ9v2d"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController::new" type="service_closure" id=".service_locator.ZOQ9v2d"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController::persistEntity" type="service_closure" id=".service_locator.l2QwsaZ"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController::renderFilters" type="service_closure" id=".service_locator.ZOQ9v2d"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController::updateEntity" type="service_closure" id=".service_locator.l2QwsaZ"/>
+        <argument key="App\Controller\Admin\TaskCrudController::autocomplete" type="service_closure" id=".service_locator.ZOQ9v2d"/>
+        <argument key="App\Controller\Admin\TaskCrudController::batchDelete" type="service_closure" id=".service_locator.Olybskb"/>
+        <argument key="App\Controller\Admin\TaskCrudController::configureActions" type="service_closure" id=".service_locator.CKlWSja"/>
+        <argument key="App\Controller\Admin\TaskCrudController::configureAssets" type="service_closure" id=".service_locator.U4Bbnsn"/>
+        <argument key="App\Controller\Admin\TaskCrudController::configureCrud" type="service_closure" id=".service_locator.4C0Bh8j"/>
+        <argument key="App\Controller\Admin\TaskCrudController::configureFilters" type="service_closure" id=".service_locator.Nt.ogDb"/>
+        <argument key="App\Controller\Admin\TaskCrudController::configureResponseParameters" type="service_closure" id=".service_locator.2dc0eaX"/>
+        <argument key="App\Controller\Admin\TaskCrudController::createEditForm" type="service_closure" id=".service_locator.bgO__Zr"/>
+        <argument key="App\Controller\Admin\TaskCrudController::createEditFormBuilder" type="service_closure" id=".service_locator.bgO__Zr"/>
+        <argument key="App\Controller\Admin\TaskCrudController::createIndexQueryBuilder" type="service_closure" id=".service_locator.3on9uHL"/>
+        <argument key="App\Controller\Admin\TaskCrudController::createNewForm" type="service_closure" id=".service_locator.bgO__Zr"/>
+        <argument key="App\Controller\Admin\TaskCrudController::createNewFormBuilder" type="service_closure" id=".service_locator.bgO__Zr"/>
+        <argument key="App\Controller\Admin\TaskCrudController::delete" type="service_closure" id=".service_locator.ZOQ9v2d"/>
+        <argument key="App\Controller\Admin\TaskCrudController::deleteEntity" type="service_closure" id=".service_locator.l2QwsaZ"/>
+        <argument key="App\Controller\Admin\TaskCrudController::detail" type="service_closure" id=".service_locator.ZOQ9v2d"/>
+        <argument key="App\Controller\Admin\TaskCrudController::edit" type="service_closure" id=".service_locator.ZOQ9v2d"/>
+        <argument key="App\Controller\Admin\TaskCrudController::index" type="service_closure" id=".service_locator.ZOQ9v2d"/>
+        <argument key="App\Controller\Admin\TaskCrudController::new" type="service_closure" id=".service_locator.ZOQ9v2d"/>
+        <argument key="App\Controller\Admin\TaskCrudController::persistEntity" type="service_closure" id=".service_locator.l2QwsaZ"/>
+        <argument key="App\Controller\Admin\TaskCrudController::renderFilters" type="service_closure" id=".service_locator.ZOQ9v2d"/>
+        <argument key="App\Controller\Admin\TaskCrudController::updateEntity" type="service_closure" id=".service_locator.l2QwsaZ"/>
         <argument key="App\Controller\Admin\UploadCrudController::autocomplete" type="service_closure" id=".service_locator.ZOQ9v2d"/>
         <argument key="App\Controller\Admin\UploadCrudController::batchDelete" type="service_closure" id=".service_locator.Olybskb"/>
         <argument key="App\Controller\Admin\UploadCrudController::configureActions" type="service_closure" id=".service_locator.CKlWSja"/>
@@ -7323,11 +7376,6 @@
         <argument key="App\Controller\IncidentController::index" type="service_closure" id=".service_locator.ClFhw5X"/>
         <argument key="App\Controller\IncidentController::new" type="service_closure" id=".service_locator.ClFhw5X"/>
         <argument key="App\Controller\IncidentController::show" type="service_closure" id=".service_locator.0gg6_jH"/>
-        <argument key="App\Controller\OracleTesterController::delete" type="service_closure" id=".service_locator.4xqZBdp"/>
-        <argument key="App\Controller\OracleTesterController::edit" type="service_closure" id=".service_locator.4xqZBdp"/>
-        <argument key="App\Controller\OracleTesterController::index" type="service_closure" id=".service_locator.uJMHewH"/>
-        <argument key="App\Controller\OracleTesterController::new" type="service_closure" id=".service_locator.uJMHewH"/>
-        <argument key="App\Controller\OracleTesterController::show" type="service_closure" id=".service_locator.Ufh0_cA"/>
         <argument key="App\Controller\RegistrationController::register" type="service_closure" id=".service_locator.B3Rkt.q"/>
         <argument key="App\Controller\SecurityController::login" type="service_closure" id=".service_locator.UDgw6Ol"/>
         <argument key="App\Controller\TaskController::delete" type="service_closure" id=".service_locator.gfSrDu1"/>
@@ -7394,6 +7442,48 @@
         <argument key="App\Controller\Admin\IncidentCrudController:persistEntity" type="service_closure" id=".service_locator.l2QwsaZ"/>
         <argument key="App\Controller\Admin\IncidentCrudController:renderFilters" type="service_closure" id=".service_locator.ZOQ9v2d"/>
         <argument key="App\Controller\Admin\IncidentCrudController:updateEntity" type="service_closure" id=".service_locator.l2QwsaZ"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController:autocomplete" type="service_closure" id=".service_locator.ZOQ9v2d"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController:batchDelete" type="service_closure" id=".service_locator.Olybskb"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController:configureActions" type="service_closure" id=".service_locator.CKlWSja"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController:configureAssets" type="service_closure" id=".service_locator.U4Bbnsn"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController:configureCrud" type="service_closure" id=".service_locator.4C0Bh8j"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController:configureFilters" type="service_closure" id=".service_locator.Nt.ogDb"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController:configureResponseParameters" type="service_closure" id=".service_locator.2dc0eaX"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController:createEditForm" type="service_closure" id=".service_locator.bgO__Zr"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController:createEditFormBuilder" type="service_closure" id=".service_locator.bgO__Zr"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController:createIndexQueryBuilder" type="service_closure" id=".service_locator.3on9uHL"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController:createNewForm" type="service_closure" id=".service_locator.bgO__Zr"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController:createNewFormBuilder" type="service_closure" id=".service_locator.bgO__Zr"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController:delete" type="service_closure" id=".service_locator.ZOQ9v2d"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController:deleteEntity" type="service_closure" id=".service_locator.l2QwsaZ"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController:detail" type="service_closure" id=".service_locator.ZOQ9v2d"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController:edit" type="service_closure" id=".service_locator.ZOQ9v2d"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController:index" type="service_closure" id=".service_locator.ZOQ9v2d"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController:new" type="service_closure" id=".service_locator.ZOQ9v2d"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController:persistEntity" type="service_closure" id=".service_locator.l2QwsaZ"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController:renderFilters" type="service_closure" id=".service_locator.ZOQ9v2d"/>
+        <argument key="App\Controller\Admin\OracleTesterCrudController:updateEntity" type="service_closure" id=".service_locator.l2QwsaZ"/>
+        <argument key="App\Controller\Admin\TaskCrudController:autocomplete" type="service_closure" id=".service_locator.ZOQ9v2d"/>
+        <argument key="App\Controller\Admin\TaskCrudController:batchDelete" type="service_closure" id=".service_locator.Olybskb"/>
+        <argument key="App\Controller\Admin\TaskCrudController:configureActions" type="service_closure" id=".service_locator.CKlWSja"/>
+        <argument key="App\Controller\Admin\TaskCrudController:configureAssets" type="service_closure" id=".service_locator.U4Bbnsn"/>
+        <argument key="App\Controller\Admin\TaskCrudController:configureCrud" type="service_closure" id=".service_locator.4C0Bh8j"/>
+        <argument key="App\Controller\Admin\TaskCrudController:configureFilters" type="service_closure" id=".service_locator.Nt.ogDb"/>
+        <argument key="App\Controller\Admin\TaskCrudController:configureResponseParameters" type="service_closure" id=".service_locator.2dc0eaX"/>
+        <argument key="App\Controller\Admin\TaskCrudController:createEditForm" type="service_closure" id=".service_locator.bgO__Zr"/>
+        <argument key="App\Controller\Admin\TaskCrudController:createEditFormBuilder" type="service_closure" id=".service_locator.bgO__Zr"/>
+        <argument key="App\Controller\Admin\TaskCrudController:createIndexQueryBuilder" type="service_closure" id=".service_locator.3on9uHL"/>
+        <argument key="App\Controller\Admin\TaskCrudController:createNewForm" type="service_closure" id=".service_locator.bgO__Zr"/>
+        <argument key="App\Controller\Admin\TaskCrudController:createNewFormBuilder" type="service_closure" id=".service_locator.bgO__Zr"/>
+        <argument key="App\Controller\Admin\TaskCrudController:delete" type="service_closure" id=".service_locator.ZOQ9v2d"/>
+        <argument key="App\Controller\Admin\TaskCrudController:deleteEntity" type="service_closure" id=".service_locator.l2QwsaZ"/>
+        <argument key="App\Controller\Admin\TaskCrudController:detail" type="service_closure" id=".service_locator.ZOQ9v2d"/>
+        <argument key="App\Controller\Admin\TaskCrudController:edit" type="service_closure" id=".service_locator.ZOQ9v2d"/>
+        <argument key="App\Controller\Admin\TaskCrudController:index" type="service_closure" id=".service_locator.ZOQ9v2d"/>
+        <argument key="App\Controller\Admin\TaskCrudController:new" type="service_closure" id=".service_locator.ZOQ9v2d"/>
+        <argument key="App\Controller\Admin\TaskCrudController:persistEntity" type="service_closure" id=".service_locator.l2QwsaZ"/>
+        <argument key="App\Controller\Admin\TaskCrudController:renderFilters" type="service_closure" id=".service_locator.ZOQ9v2d"/>
+        <argument key="App\Controller\Admin\TaskCrudController:updateEntity" type="service_closure" id=".service_locator.l2QwsaZ"/>
         <argument key="App\Controller\Admin\UploadCrudController:autocomplete" type="service_closure" id=".service_locator.ZOQ9v2d"/>
         <argument key="App\Controller\Admin\UploadCrudController:batchDelete" type="service_closure" id=".service_locator.Olybskb"/>
         <argument key="App\Controller\Admin\UploadCrudController:configureActions" type="service_closure" id=".service_locator.CKlWSja"/>
@@ -7456,11 +7546,6 @@
         <argument key="App\Controller\IncidentController:index" type="service_closure" id=".service_locator.ClFhw5X"/>
         <argument key="App\Controller\IncidentController:new" type="service_closure" id=".service_locator.ClFhw5X"/>
         <argument key="App\Controller\IncidentController:show" type="service_closure" id=".service_locator.0gg6_jH"/>
-        <argument key="App\Controller\OracleTesterController:delete" type="service_closure" id=".service_locator.4xqZBdp"/>
-        <argument key="App\Controller\OracleTesterController:edit" type="service_closure" id=".service_locator.4xqZBdp"/>
-        <argument key="App\Controller\OracleTesterController:index" type="service_closure" id=".service_locator.uJMHewH"/>
-        <argument key="App\Controller\OracleTesterController:new" type="service_closure" id=".service_locator.uJMHewH"/>
-        <argument key="App\Controller\OracleTesterController:show" type="service_closure" id=".service_locator.Ufh0_cA"/>
         <argument key="App\Controller\RegistrationController:register" type="service_closure" id=".service_locator.B3Rkt.q"/>
         <argument key="App\Controller\SecurityController:login" type="service_closure" id=".service_locator.UDgw6Ol"/>
         <argument key="App\Controller\TaskController:delete" type="service_closure" id=".service_locator.gfSrDu1"/>
@@ -7552,7 +7637,7 @@
       <argument type="service" id="debug.argument_resolver.not_tagged_controller.inner"/>
       <argument type="service" id="debug.stopwatch"/>
     </service>
-    <service id=".service_locator.Wprj6LZ" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.EhQ65gg" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Form\AttachedFileType" type="service_closure" id="App\Form\AttachedFileType"/>
@@ -7562,6 +7647,7 @@
         <argument key="App\Form\IncidentType" type="service_closure" id="App\Form\IncidentType"/>
         <argument key="App\Form\OracleTesterType" type="service_closure" id="App\Form\OracleTesterType"/>
         <argument key="App\Form\RegistrationFormType" type="service_closure" id="App\Form\RegistrationFormType"/>
+        <argument key="App\Form\Task1Type" type="service_closure" id="App\Form\Task1Type"/>
         <argument key="App\Form\TaskType" type="service_closure" id="App\Form\TaskType"/>
         <argument key="App\Form\UploadType" type="service_closure" id="App\Form\UploadType"/>
         <argument key="App\Form\User1Type" type="service_closure" id="App\Form\User1Type"/>
@@ -7832,6 +7918,8 @@
       <argument type="collection">
         <argument>App\Controller\Admin\ComparerCrudController</argument>
         <argument>App\Controller\Admin\IncidentCrudController</argument>
+        <argument>App\Controller\Admin\OracleTesterCrudController</argument>
+        <argument>App\Controller\Admin\TaskCrudController</argument>
         <argument>App\Controller\Admin\UploadCrudController</argument>
         <argument>App\Controller\Admin\UserCrudController</argument>
       </argument>
@@ -7916,6 +8004,18 @@
     <service id=".service_locator.ipvtXDO.App\Controller\Admin\IncidentCrudController" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator_context" id="App\Controller\Admin\IncidentCrudController"/>
       <argument>App\Controller\Admin\IncidentCrudController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.ipvtXDO" method="withContext"/>
+    </service>
+    <service id=".service_locator.ipvtXDO.App\Controller\Admin\OracleTesterCrudController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\Admin\OracleTesterCrudController"/>
+      <argument>App\Controller\Admin\OracleTesterCrudController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.ipvtXDO" method="withContext"/>
+    </service>
+    <service id=".service_locator.ipvtXDO.App\Controller\Admin\TaskCrudController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\Admin\TaskCrudController"/>
+      <argument>App\Controller\Admin\TaskCrudController</argument>
       <argument type="service" id="service_container"/>
       <factory service=".service_locator.ipvtXDO" method="withContext"/>
     </service>
@@ -8198,12 +8298,12 @@
       <argument type="service" id="EasyCorp\Bundle\EasyAdminBundle\Router\AdminUrlGenerator"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">
-      <argument type="service" id=".service_locator.4ttpril"/>
+      <argument type="service" id=".service_locator.Jwf2tBy"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver">
-      <argument type="service" id=".service_locator.4ttpril"/>
+      <argument type="service" id=".service_locator.Jwf2tBy"/>
     </service>
     <service id=".debug.http_client.inner" class="Symfony\Contracts\HttpClient\HttpClientInterface">
       <argument type="collection"/>
@@ -8245,8 +8345,6 @@
     <service id=".errored..service_locator.IZlzbt7.App\Entity\Deparement" class="App\Entity\Deparement"/>
     <service id=".errored..service_locator.0gg6_jH.App\Entity\Incident" class="App\Entity\Incident"/>
     <service id=".errored..service_locator.zAmOOyF.App\Entity\Incident" class="App\Entity\Incident"/>
-    <service id=".errored..service_locator.Ufh0_cA.App\Entity\OracleTester" class="App\Entity\OracleTester"/>
-    <service id=".errored..service_locator.4xqZBdp.App\Entity\OracleTester" class="App\Entity\OracleTester"/>
     <service id=".errored..service_locator.TfvLzuL.App\Entity\Task" class="App\Entity\Task"/>
     <service id=".errored..service_locator.gfSrDu1.App\Entity\Task" class="App\Entity\Task"/>
     <service id=".errored..service_locator._U79y.d.App\Entity\Upload" class="App\Entity\Upload"/>
@@ -9156,7 +9254,7 @@
     <service id="Symfony\WebpackEncoreBundle\Asset\EntrypointLookupInterface" alias="webpack_encore.entrypoint_lookup[_default]"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.gSv9zYw" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.4ttpril"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.Jwf2tBy"/>
     <service id="session" alias=".session.do-not-use" public="true">
       <deprecated package="symfony/framework-bundle" version="5.3">The "%alias_id%" service and "SessionInterface" alias are deprecated, use "$requestStack-&gt;getSession()" instead.</deprecated>
     </service>
@@ -9183,9 +9281,9 @@
     <service id=".service_locator.rAlqQ78" alias=".service_locator.3on9uHL"/>
     <service id=".service_locator.tbo4Jjv" alias=".service_locator.bgO__Zr"/>
     <service id=".service_locator.YIjRGHA" alias=".service_locator.B3Rkt.q"/>
-    <service id=".service_locator.WvuxPVA" alias=".service_locator.4ttpril"/>
+    <service id=".service_locator.EhJENKI" alias=".service_locator.Jwf2tBy"/>
     <service id=".service_locator.wKF4yn1" alias=".service_locator.19_mNxd"/>
-    <service id=".service_locator.d3MMJDH" alias=".service_locator.Wprj6LZ"/>
+    <service id=".service_locator.xgisK_O" alias=".service_locator.EhQ65gg"/>
     <service id=".service_locator.4hi2aOY" alias=".service_locator.bBRwv06"/>
     <service id=".service_locator.O24_MAy" alias=".service_locator.yY.p4P7"/>
     <service id=".service_locator.opmh_Hv" alias=".service_locator.ipvtXDO"/>
@@ -9238,9 +9336,6 @@
     <service id=".service_locator.fHcmKIt" alias=".service_locator.ClFhw5X"/>
     <service id=".service_locator.YaF8XJS" alias=".service_locator.0gg6_jH"/>
     <service id=".service_locator.iHhnBmb" alias=".service_locator.zAmOOyF"/>
-    <service id=".service_locator.z5Y_Xmq" alias=".service_locator.uJMHewH"/>
-    <service id=".service_locator.L3iYV41" alias=".service_locator.Ufh0_cA"/>
-    <service id=".service_locator.om_ON1u" alias=".service_locator.4xqZBdp"/>
     <service id=".service_locator.OUdDkM8" alias=".service_locator.B3Rkt.q"/>
     <service id=".service_locator.kXCVHeG" alias=".service_locator.UDgw6Ol"/>
     <service id=".service_locator.ACOB_3X" alias=".service_locator.OSbocZ8"/>

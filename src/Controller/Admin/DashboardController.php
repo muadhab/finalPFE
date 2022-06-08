@@ -9,6 +9,9 @@ use App\Entity\User;
 use App\Entity\Incident;
 use App\Entity\Comparer;
 use App\Entity\Upload;
+use App\Entity\Task;
+use App\Entity\OracleTester;
+// use App\Controller\Admin\OracleTesterController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use EasyCorp\Bundle\EasyAdminBundle\Router\AdminUrlGenerator;
@@ -29,15 +32,20 @@ class DashboardController extends AbstractDashboardController
     {
         return Dashboard::new()
             ->setTitle('Monitora');
-            -setFaviconPath('public\monitoa logo.PNG');
+            -setFaviconPath('public\monitoralogo.PNG');
     }
 
     public function configureMenuItems(): iterable
     {
-        // yield MenuItem::linkToDashboard('Dashboard', 'fa fa-home');
-        yield MenuItem::linkToCrud('Users management', 'fas fa-user', User::class);
-        yield MenuItem::linkToCrud('Incidents management', 'fas fa-indent', Incident::class);
-        yield MenuItem::linkToCrud('Compare management', 'fas fa-anchor', Comparer::class);
-        yield MenuItem::linkToCrud('Upload', 'fas  fa-upload', Upload::class);
+        ;
+        yield MenuItem::linkToCrud('Users Management', 'fas fa-user', User::class);
+        yield MenuItem::linkToCrud('Incidents Management', 'fas fa-indent', Incident::class);
+        yield MenuItem::linkToCrud('Tasks Management', 'fas fa-flag', Task::class);
+        yield MenuItem::linkToDashboard('Backup Monitoring', 'fa fa-home');
+        yield MenuItem::linkToCrud('Compare Management', 'fas fa-anchor', Comparer::class);
+        yield MenuItem::linkToCrud('Upload CSV', 'fas  fa-upload', Upload::class);
+        yield MenuItem::linkToCrud('Oracle Tester', 'fas  fa-tasks', OracleTester::class);
+        yield MenuItem::linkToCrud('infrasructure Monitoring', 'fas  fa-cloud', Upload::class);
+        yield MenuItem::linkToCrud('Reporing Managament', 'fas  fa-file', Upload::class);
     }
 }

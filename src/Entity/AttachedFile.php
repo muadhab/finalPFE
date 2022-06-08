@@ -42,10 +42,10 @@ class AttachedFile
      */
     private $ora_score;
 
-    /**
-     * @ORM\ManyToOne(targetEntity=Deparement::class, inversedBy="attachedFiles")
-     */
-    private $departement;
+    // /**
+    //  * @ORM\ManyToOne(targetEntity=Deparement::class, inversedBy="attachedFiles")
+    //  */
+    // private $departement;
 
     public function getId(): ?int
     {
@@ -112,15 +112,15 @@ class AttachedFile
         return $this;
     }
 
-    public function getDepartement(): ?Deparement
-    {
-        return $this->departement;
-    }
+    // public function getDepartement(): ?Deparement
+    // {
+    //     return $this->departement;
+    // }
 
-    public function setDepartement(?Deparement $departement): self
-    {
-        $this->departement = $departement;
+    // public function setDepartement(?Deparement $departement): self
+    // {
+    //     $this->departement = $departement;
 
-        return $this;
-    }
+    //     return $this;
+    // }
 }

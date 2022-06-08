@@ -43,6 +43,12 @@ class Task
      */
     private $task_owner;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Incident::class)
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $Incident;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -107,4 +113,20 @@ class Task
 
         return $this;
     }
+
+    public function getIncident(): ?Incident
+    {
+        return $this->Incident;
+    }
+
+    public function setIncident(?Incident $Incident): self
+    {
+        $this->Incident = $Incident;
+
+        return $this;
+    }
+    public function __toString()
+{
+    return $this->nom_task; // which is a string in any circumstance
+}
 }

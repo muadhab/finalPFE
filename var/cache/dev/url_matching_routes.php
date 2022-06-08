@@ -22,8 +22,7 @@ return [
         ],
         '/incident' => [[['_route' => 'app_incident_index', '_controller' => 'App\\Controller\\IncidentController::index'], null, ['GET' => 0], null, true, false, null]],
         '/incident/new' => [[['_route' => 'app_incident_new', '_controller' => 'App\\Controller\\IncidentController::new'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],
-        '/oracle/tester' => [[['_route' => 'app_oracle_tester_index', '_controller' => 'App\\Controller\\OracleTesterController::index'], null, ['GET' => 0], null, true, false, null]],
-        '/oracle/tester/new' => [[['_route' => 'app_oracle_tester_new', '_controller' => 'App\\Controller\\OracleTesterController::new'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        '/oracle/tester/admin/oracle/tester' => [[['_route' => 'app_admin_oracle_tester', '_controller' => 'App\\Controller\\OracleTesterController::index1'], null, null, null, false, false, null]],
         '/register' => [[['_route' => 'app_register', '_controller' => 'App\\Controller\\RegistrationController::register'], null, null, null, false, false, null]],
         '/login' => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null]],
         '/logout' => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout'], null, null, null, false, false, null]],
@@ -61,41 +60,36 @@ return [
                     .'|/edit(*:196)'
                     .'|(*:204)'
                 .')'
-                .'|/oracle/tester/([^/]++)(?'
-                    .'|(*:239)'
-                    .'|/edit(*:252)'
-                    .'|(*:260)'
-                .')'
                 .'|/task/([^/]++)(?'
-                    .'|(*:286)'
-                    .'|/edit(*:299)'
-                    .'|(*:307)'
+                    .'|(*:230)'
+                    .'|/edit(*:243)'
+                    .'|(*:251)'
                 .')'
                 .'|/u(?'
                     .'|pload/([^/]++)(?'
-                        .'|(*:338)'
-                        .'|/edit(*:351)'
-                        .'|(*:359)'
+                        .'|(*:282)'
+                        .'|/edit(*:295)'
+                        .'|(*:303)'
                     .')'
                     .'|ser/([^/]++)(?'
-                        .'|(*:383)'
-                        .'|/edit(*:396)'
-                        .'|(*:404)'
+                        .'|(*:327)'
+                        .'|/edit(*:340)'
+                        .'|(*:348)'
                     .')'
                 .')'
                 .'|/_(?'
-                    .'|error/(\\d+)(?:\\.([^/]++))?(*:445)'
-                    .'|wdt/([^/]++)(*:465)'
+                    .'|error/(\\d+)(?:\\.([^/]++))?(*:389)'
+                    .'|wdt/([^/]++)(*:409)'
                     .'|profiler/([^/]++)(?'
                         .'|/(?'
-                            .'|search/results(*:511)'
-                            .'|router(*:525)'
+                            .'|search/results(*:455)'
+                            .'|router(*:469)'
                             .'|exception(?'
-                                .'|(*:545)'
-                                .'|\\.css(*:558)'
+                                .'|(*:489)'
+                                .'|\\.css(*:502)'
                             .')'
                         .')'
-                        .'|(*:568)'
+                        .'|(*:512)'
                     .')'
                 .')'
             .')/?$}sDu',
@@ -113,25 +107,22 @@ return [
         183 => [[['_route' => 'app_incident_show', '_controller' => 'App\\Controller\\IncidentController::show'], ['id'], ['GET' => 0], null, false, true, null]],
         196 => [[['_route' => 'app_incident_edit', '_controller' => 'App\\Controller\\IncidentController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
         204 => [[['_route' => 'app_incident_delete', '_controller' => 'App\\Controller\\IncidentController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
-        239 => [[['_route' => 'app_oracle_tester_show', '_controller' => 'App\\Controller\\OracleTesterController::show'], ['id'], ['GET' => 0], null, false, true, null]],
-        252 => [[['_route' => 'app_oracle_tester_edit', '_controller' => 'App\\Controller\\OracleTesterController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
-        260 => [[['_route' => 'app_oracle_tester_delete', '_controller' => 'App\\Controller\\OracleTesterController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
-        286 => [[['_route' => 'app_task_show', '_controller' => 'App\\Controller\\TaskController::show'], ['id'], ['GET' => 0], null, false, true, null]],
-        299 => [[['_route' => 'app_task_edit', '_controller' => 'App\\Controller\\TaskController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
-        307 => [[['_route' => 'app_task_delete', '_controller' => 'App\\Controller\\TaskController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
-        338 => [[['_route' => 'app_upload_show', '_controller' => 'App\\Controller\\UploadController::show'], ['id'], ['GET' => 0], null, false, true, null]],
-        351 => [[['_route' => 'app_upload_edit', '_controller' => 'App\\Controller\\UploadController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
-        359 => [[['_route' => 'app_upload_delete', '_controller' => 'App\\Controller\\UploadController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
-        383 => [[['_route' => 'app_user_show', '_controller' => 'App\\Controller\\UserController::show'], ['id'], ['GET' => 0], null, false, true, null]],
-        396 => [[['_route' => 'app_user_edit', '_controller' => 'App\\Controller\\UserController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
-        404 => [[['_route' => 'app_user_delete', '_controller' => 'App\\Controller\\UserController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
-        445 => [[['_route' => '_preview_error', '_controller' => 'error_controller::preview', '_format' => 'html'], ['code', '_format'], null, null, false, true, null]],
-        465 => [[['_route' => '_wdt', '_controller' => 'web_profiler.controller.profiler::toolbarAction'], ['token'], null, null, false, true, null]],
-        511 => [[['_route' => '_profiler_search_results', '_controller' => 'web_profiler.controller.profiler::searchResultsAction'], ['token'], null, null, false, false, null]],
-        525 => [[['_route' => '_profiler_router', '_controller' => 'web_profiler.controller.router::panelAction'], ['token'], null, null, false, false, null]],
-        545 => [[['_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception_panel::body'], ['token'], null, null, false, false, null]],
-        558 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
-        568 => [
+        230 => [[['_route' => 'app_task_show', '_controller' => 'App\\Controller\\TaskController::show'], ['id'], ['GET' => 0], null, false, true, null]],
+        243 => [[['_route' => 'app_task_edit', '_controller' => 'App\\Controller\\TaskController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        251 => [[['_route' => 'app_task_delete', '_controller' => 'App\\Controller\\TaskController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
+        282 => [[['_route' => 'app_upload_show', '_controller' => 'App\\Controller\\UploadController::show'], ['id'], ['GET' => 0], null, false, true, null]],
+        295 => [[['_route' => 'app_upload_edit', '_controller' => 'App\\Controller\\UploadController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        303 => [[['_route' => 'app_upload_delete', '_controller' => 'App\\Controller\\UploadController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
+        327 => [[['_route' => 'app_user_show', '_controller' => 'App\\Controller\\UserController::show'], ['id'], ['GET' => 0], null, false, true, null]],
+        340 => [[['_route' => 'app_user_edit', '_controller' => 'App\\Controller\\UserController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        348 => [[['_route' => 'app_user_delete', '_controller' => 'App\\Controller\\UserController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
+        389 => [[['_route' => '_preview_error', '_controller' => 'error_controller::preview', '_format' => 'html'], ['code', '_format'], null, null, false, true, null]],
+        409 => [[['_route' => '_wdt', '_controller' => 'web_profiler.controller.profiler::toolbarAction'], ['token'], null, null, false, true, null]],
+        455 => [[['_route' => '_profiler_search_results', '_controller' => 'web_profiler.controller.profiler::searchResultsAction'], ['token'], null, null, false, false, null]],
+        469 => [[['_route' => '_profiler_router', '_controller' => 'web_profiler.controller.router::panelAction'], ['token'], null, null, false, false, null]],
+        489 => [[['_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception_panel::body'], ['token'], null, null, false, false, null]],
+        502 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
+        512 => [
             [['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],
