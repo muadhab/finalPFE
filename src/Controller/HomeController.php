@@ -17,4 +17,10 @@ class HomeController extends AbstractController
             'controller_name' => 'HomeController',
         ]);
     }
+    public function reindex(): Response
+    {
+        return $this->render('security/login.html.twig', [
+            'controller_name' => 'SecurityController',
+        ]);
+    }
 }

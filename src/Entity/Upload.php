@@ -4,9 +4,13 @@ namespace App\Entity;
 
 use App\Repository\UploadRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\File;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
  * @ORM\Entity(repositoryClass=UploadRepository::class)
+ * @vich\Uploadable
  */
 class Upload
 {
@@ -14,6 +18,7 @@ class Upload
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
+     * 
      */
     private $id;
 
@@ -21,7 +26,11 @@ class Upload
      * @ORM\Column(type="string", length=255)
      */
     private $file1;
-
+    /**
+     *  @Vich\UploadableField(mapping="Upload",fileNameProperty="file1") 
+     *  @var File
+     */
+    private $file1file;
     /**
      * @ORM\Column(type="string", length=255)
      */
@@ -55,4 +64,19 @@ class Upload
 
         return $this;
     }
+    /**
+     * @return File|null
+     */
+    public function getfile1file (): ?file
+    {
+        return $this->file1file;
+    }
+    /**
+     *  @param File null $file1file 
+     */
+    public function setfile1file ( ? File $file1file= null ) 
+    {
+        $this->file1file = $file1file ;
+    } 
+    
 }

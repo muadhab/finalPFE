@@ -19,6 +19,9 @@ class UploadType extends AbstractType
          ->add('file2', FileType::class, [
         'mapped' => false
          ])
+         ->add('file1file', FileType::class, [
+            'mapped' => false
+        ])
 ;
     }
 

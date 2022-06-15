@@ -51,9 +51,10 @@
 
 
                 <input type="hidden" name="{{ target_path_parameter|default('_target_path') }}" value="{{ target_path|default(ea is defined ? path(ea.dashboardRouteName) : '/') }}" />
-
+                <h1><center>Monitora</center></h1>
                 <div class="form-group">
                     <label class="form-control-label required" for="username">{{ _username_label }}</label>
+                    
                     <div class="form-widget">
                         <input type="text" id="username" name="{{ username_parameter|default('_username') }}" class="form-control" value="{{ last_username|default('') }}" required autofocus autocomplete="username">
                     </div>

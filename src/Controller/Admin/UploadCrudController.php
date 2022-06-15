@@ -11,4 +11,15 @@ use App\Entity\Upload;
       {
            return Upload::class ; 
         }
- }
+//         public function configureFields (string $pageName):iterable
+//          {
+//                return [
+               
+//                     file1fileField::new('Upload')
+//                ->setBasePath('files/Upload')
+//                ->setUploadDir('public/files/Upload')
+//                ->setUploadedFileNamePattern('[randomhash].[extension]')
+//                ->setRequired(false),
+//                ];
+//  }
+}

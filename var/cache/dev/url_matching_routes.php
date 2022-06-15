@@ -37,92 +37,125 @@ return [
         '/_profiler/search_bar' => [[['_route' => '_profiler_search_bar', '_controller' => 'web_profiler.controller.profiler::searchBarAction'], null, null, null, false, false, null]],
         '/_profiler/phpinfo' => [[['_route' => '_profiler_phpinfo', '_controller' => 'web_profiler.controller.profiler::phpinfoAction'], null, null, null, false, false, null]],
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
+        '/' => [[['_route' => 'index', '_controller' => 'App\\Controller\\HomeController::reindex'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'
-                .'|/attached/file/([^/]++)(?'
-                    .'|(*:33)'
-                    .'|/edit(*:45)'
-                    .'|(*:52)'
+                .'|/a(?'
+                    .'|ttached/file/([^/]++)(?'
+                        .'|(*:36)'
+                        .'|/edit(*:48)'
+                        .'|(*:55)'
+                    .')'
+                    .'|pi(?'
+                        .'|(?:/(index)(?:\\.([^/]++))?)?(*:96)'
+                        .'|/(?'
+                            .'|doc(?'
+                                .'|s(?:\\.([^/]++))?(*:129)'
+                                .'|uments(?'
+                                    .'|(?:\\.([^/]++))?(?'
+                                        .'|(*:164)'
+                                    .')'
+                                    .'|/([^/\\.]++)(?:\\.([^/]++))?(?'
+                                        .'|(*:202)'
+                                    .')'
+                                .')'
+                            .')'
+                            .'|contexts/(.+)(?:\\.([^/]++))?(*:241)'
+                        .')'
+                    .')'
                 .')'
                 .'|/comparer/([^/]++)(?'
-                    .'|(*:81)'
-                    .'|/edit(*:93)'
-                    .'|(*:100)'
+                    .'|(*:273)'
+                    .'|/edit(*:286)'
+                    .'|(*:294)'
                 .')'
                 .'|/deparement/([^/]++)(?'
-                    .'|(*:132)'
-                    .'|/edit(*:145)'
-                    .'|(*:153)'
+                    .'|(*:326)'
+                    .'|/edit(*:339)'
+                    .'|(*:347)'
                 .')'
                 .'|/incident/([^/]++)(?'
-                    .'|(*:183)'
-                    .'|/edit(*:196)'
-                    .'|(*:204)'
+                    .'|(*:377)'
+                    .'|/edit(*:390)'
+                    .'|(*:398)'
                 .')'
                 .'|/task/([^/]++)(?'
-                    .'|(*:230)'
-                    .'|/edit(*:243)'
-                    .'|(*:251)'
+                    .'|(*:424)'
+                    .'|/edit(*:437)'
+                    .'|(*:445)'
                 .')'
                 .'|/u(?'
                     .'|pload/([^/]++)(?'
-                        .'|(*:282)'
-                        .'|/edit(*:295)'
-                        .'|(*:303)'
+                        .'|(*:476)'
+                        .'|/edit(*:489)'
+                        .'|(*:497)'
                     .')'
                     .'|ser/([^/]++)(?'
-                        .'|(*:327)'
-                        .'|/edit(*:340)'
-                        .'|(*:348)'
+                        .'|(*:521)'
+                        .'|/edit(*:534)'
+                        .'|(*:542)'
                     .')'
                 .')'
                 .'|/_(?'
-                    .'|error/(\\d+)(?:\\.([^/]++))?(*:389)'
-                    .'|wdt/([^/]++)(*:409)'
+                    .'|error/(\\d+)(?:\\.([^/]++))?(*:583)'
+                    .'|wdt/([^/]++)(*:603)'
                     .'|profiler/([^/]++)(?'
                         .'|/(?'
-                            .'|search/results(*:455)'
-                            .'|router(*:469)'
+                            .'|search/results(*:649)'
+                            .'|router(*:663)'
                             .'|exception(?'
-                                .'|(*:489)'
-                                .'|\\.css(*:502)'
+                                .'|(*:683)'
+                                .'|\\.css(*:696)'
                             .')'
                         .')'
-                        .'|(*:512)'
+                        .'|(*:706)'
                     .')'
                 .')'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
-        33 => [[['_route' => 'app_attached_file_show', '_controller' => 'App\\Controller\\AttachedFileController::show'], ['id'], ['GET' => 0], null, false, true, null]],
-        45 => [[['_route' => 'app_attached_file_edit', '_controller' => 'App\\Controller\\AttachedFileController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
-        52 => [[['_route' => 'app_attached_file_delete', '_controller' => 'App\\Controller\\AttachedFileController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
-        81 => [[['_route' => 'app_comparer_show', '_controller' => 'App\\Controller\\ComparerController::show'], ['id'], ['GET' => 0], null, false, true, null]],
-        93 => [[['_route' => 'app_comparer_edit', '_controller' => 'App\\Controller\\ComparerController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
-        100 => [[['_route' => 'app_comparer_delete', '_controller' => 'App\\Controller\\ComparerController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
-        132 => [[['_route' => 'app_deparement_show', '_controller' => 'App\\Controller\\DeparementController::show'], ['id'], ['GET' => 0], null, false, true, null]],
-        145 => [[['_route' => 'app_deparement_edit', '_controller' => 'App\\Controller\\DeparementController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
-        153 => [[['_route' => 'app_deparement_delete', '_controller' => 'App\\Controller\\DeparementController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
-        183 => [[['_route' => 'app_incident_show', '_controller' => 'App\\Controller\\IncidentController::show'], ['id'], ['GET' => 0], null, false, true, null]],
-        196 => [[['_route' => 'app_incident_edit', '_controller' => 'App\\Controller\\IncidentController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
-        204 => [[['_route' => 'app_incident_delete', '_controller' => 'App\\Controller\\IncidentController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
-        230 => [[['_route' => 'app_task_show', '_controller' => 'App\\Controller\\TaskController::show'], ['id'], ['GET' => 0], null, false, true, null]],
-        243 => [[['_route' => 'app_task_edit', '_controller' => 'App\\Controller\\TaskController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
-        251 => [[['_route' => 'app_task_delete', '_controller' => 'App\\Controller\\TaskController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
-        282 => [[['_route' => 'app_upload_show', '_controller' => 'App\\Controller\\UploadController::show'], ['id'], ['GET' => 0], null, false, true, null]],
-        295 => [[['_route' => 'app_upload_edit', '_controller' => 'App\\Controller\\UploadController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
-        303 => [[['_route' => 'app_upload_delete', '_controller' => 'App\\Controller\\UploadController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
-        327 => [[['_route' => 'app_user_show', '_controller' => 'App\\Controller\\UserController::show'], ['id'], ['GET' => 0], null, false, true, null]],
-        340 => [[['_route' => 'app_user_edit', '_controller' => 'App\\Controller\\UserController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
-        348 => [[['_route' => 'app_user_delete', '_controller' => 'App\\Controller\\UserController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
-        389 => [[['_route' => '_preview_error', '_controller' => 'error_controller::preview', '_format' => 'html'], ['code', '_format'], null, null, false, true, null]],
-        409 => [[['_route' => '_wdt', '_controller' => 'web_profiler.controller.profiler::toolbarAction'], ['token'], null, null, false, true, null]],
-        455 => [[['_route' => '_profiler_search_results', '_controller' => 'web_profiler.controller.profiler::searchResultsAction'], ['token'], null, null, false, false, null]],
-        469 => [[['_route' => '_profiler_router', '_controller' => 'web_profiler.controller.router::panelAction'], ['token'], null, null, false, false, null]],
-        489 => [[['_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception_panel::body'], ['token'], null, null, false, false, null]],
-        502 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
-        512 => [
+        36 => [[['_route' => 'app_attached_file_show', '_controller' => 'App\\Controller\\AttachedFileController::show'], ['id'], ['GET' => 0], null, false, true, null]],
+        48 => [[['_route' => 'app_attached_file_edit', '_controller' => 'App\\Controller\\AttachedFileController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        55 => [[['_route' => 'app_attached_file_delete', '_controller' => 'App\\Controller\\AttachedFileController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
+        96 => [[['_route' => 'api_entrypoint', '_controller' => 'api_platform.action.entrypoint', '_format' => '', '_api_respond' => 'true', 'index' => 'index'], ['index', '_format'], null, null, false, true, null]],
+        129 => [[['_route' => 'api_doc', '_controller' => 'api_platform.action.documentation', '_format' => '', '_api_respond' => 'true'], ['_format'], null, null, false, true, null]],
+        164 => [
+            [['_route' => 'api_documents_get_collection', '_controller' => 'api_platform.action.get_collection', '_format' => null, '_stateless' => null, '_api_resource_class' => 'App\\Resource\\document', '_api_identifiers' => ['id'], '_api_has_composite_identifier' => false, '_api_collection_operation_name' => 'get'], ['_format'], ['GET' => 0], null, false, true, null],
+            [['_route' => 'api_documents_post_collection', '_controller' => 'api_platform.action.post_collection', '_format' => null, '_stateless' => null, '_api_resource_class' => 'App\\Resource\\document', '_api_identifiers' => ['id'], '_api_has_composite_identifier' => false, '_api_collection_operation_name' => 'post'], ['_format'], ['POST' => 0], null, false, true, null],
+        ],
+        202 => [
+            [['_route' => 'api_documents_get_item', '_controller' => 'api_platform.action.get_item', '_format' => null, '_stateless' => null, '_api_resource_class' => 'App\\Resource\\document', '_api_identifiers' => ['id'], '_api_has_composite_identifier' => false, '_api_item_operation_name' => 'get'], ['id', '_format'], ['GET' => 0], null, false, true, null],
+            [['_route' => 'api_documents_delete_item', '_controller' => 'api_platform.action.delete_item', '_format' => null, '_stateless' => null, '_api_resource_class' => 'App\\Resource\\document', '_api_identifiers' => ['id'], '_api_has_composite_identifier' => false, '_api_item_operation_name' => 'delete'], ['id', '_format'], ['DELETE' => 0], null, false, true, null],
+            [['_route' => 'api_documents_put_item', '_controller' => 'api_platform.action.put_item', '_format' => null, '_stateless' => null, '_api_resource_class' => 'App\\Resource\\document', '_api_identifiers' => ['id'], '_api_has_composite_identifier' => false, '_api_item_operation_name' => 'put'], ['id', '_format'], ['PUT' => 0], null, false, true, null],
+            [['_route' => 'api_documents_patch_item', '_controller' => 'api_platform.action.patch_item', '_format' => null, '_stateless' => null, '_api_resource_class' => 'App\\Resource\\document', '_api_identifiers' => ['id'], '_api_has_composite_identifier' => false, '_api_item_operation_name' => 'patch'], ['id', '_format'], ['PATCH' => 0], null, false, true, null],
+        ],
+        241 => [[['_route' => 'api_jsonld_context', '_controller' => 'api_platform.jsonld.action.context', '_format' => 'jsonld', '_api_respond' => 'true'], ['shortName', '_format'], null, null, false, true, null]],
+        273 => [[['_route' => 'app_comparer_show', '_controller' => 'App\\Controller\\ComparerController::show'], ['id'], ['GET' => 0], null, false, true, null]],
+        286 => [[['_route' => 'app_comparer_edit', '_controller' => 'App\\Controller\\ComparerController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        294 => [[['_route' => 'app_comparer_delete', '_controller' => 'App\\Controller\\ComparerController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
+        326 => [[['_route' => 'app_deparement_show', '_controller' => 'App\\Controller\\DeparementController::show'], ['id'], ['GET' => 0], null, false, true, null]],
+        339 => [[['_route' => 'app_deparement_edit', '_controller' => 'App\\Controller\\DeparementController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        347 => [[['_route' => 'app_deparement_delete', '_controller' => 'App\\Controller\\DeparementController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
+        377 => [[['_route' => 'app_incident_show', '_controller' => 'App\\Controller\\IncidentController::show'], ['id'], ['GET' => 0], null, false, true, null]],
+        390 => [[['_route' => 'app_incident_edit', '_controller' => 'App\\Controller\\IncidentController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        398 => [[['_route' => 'app_incident_delete', '_controller' => 'App\\Controller\\IncidentController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
+        424 => [[['_route' => 'app_task_show', '_controller' => 'App\\Controller\\TaskController::show'], ['id'], ['GET' => 0], null, false, true, null]],
+        437 => [[['_route' => 'app_task_edit', '_controller' => 'App\\Controller\\TaskController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        445 => [[['_route' => 'app_task_delete', '_controller' => 'App\\Controller\\TaskController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
+        476 => [[['_route' => 'app_upload_show', '_controller' => 'App\\Controller\\UploadController::show'], ['id'], ['GET' => 0], null, false, true, null]],
+        489 => [[['_route' => 'app_upload_edit', '_controller' => 'App\\Controller\\UploadController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        497 => [[['_route' => 'app_upload_delete', '_controller' => 'App\\Controller\\UploadController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
+        521 => [[['_route' => 'app_user_show', '_controller' => 'App\\Controller\\UserController::show'], ['id'], ['GET' => 0], null, false, true, null]],
+        534 => [[['_route' => 'app_user_edit', '_controller' => 'App\\Controller\\UserController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        542 => [[['_route' => 'app_user_delete', '_controller' => 'App\\Controller\\UserController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
+        583 => [[['_route' => '_preview_error', '_controller' => 'error_controller::preview', '_format' => 'html'], ['code', '_format'], null, null, false, true, null]],
+        603 => [[['_route' => '_wdt', '_controller' => 'web_profiler.controller.profiler::toolbarAction'], ['token'], null, null, false, true, null]],
+        649 => [[['_route' => '_profiler_search_results', '_controller' => 'web_profiler.controller.profiler::searchResultsAction'], ['token'], null, null, false, false, null]],
+        663 => [[['_route' => '_profiler_router', '_controller' => 'web_profiler.controller.router::panelAction'], ['token'], null, null, false, false, null]],
+        683 => [[['_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception_panel::body'], ['token'], null, null, false, false, null]],
+        696 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
+        706 => [
             [['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],

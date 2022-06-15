@@ -11,6 +11,7 @@ use App\Entity\Comparer;
 use App\Entity\Upload;
 use App\Entity\Task;
 use App\Entity\OracleTester;
+use App\Entity\Deparement;
 // use App\Controller\Admin\OracleTesterController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -44,6 +45,7 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linkToDashboard('Backup Monitoring', 'fa fa-home');
         yield MenuItem::linkToCrud('Compare Management', 'fas fa-anchor', Comparer::class);
         yield MenuItem::linkToCrud('Upload CSV', 'fas  fa-upload', Upload::class);
+        yield MenuItem::linkToCrud('Departement Managament', 'fas  fa-users', Deparement::class);
         yield MenuItem::linkToCrud('Oracle Tester', 'fas  fa-tasks', OracleTester::class);
         yield MenuItem::linkToCrud('infrasructure Monitoring', 'fas  fa-cloud', Upload::class);
         yield MenuItem::linkToCrud('Reporing Managament', 'fas  fa-file', Upload::class);
